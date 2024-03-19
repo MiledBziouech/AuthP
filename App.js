@@ -2,10 +2,13 @@ import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 import Home1 from './screens/Home1';
 import Home2 from './screens/Home2';
+import Statistic1 from './screens/Statistic1';
+import Statics2 from './screens/Statics2';
+import Statistics3 from './screens/Statistics3';
 const App = () => {
   return (
     <View style={styles.container}>
-      <Home2 />
+      <Statics2 />
     </View>
   );
 };
