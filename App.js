@@ -8,7 +8,7 @@ import Statistics3 from './screens/Statistics3';
 const App = () => {
   return (
     <View style={styles.container}>
-      <Statics2 />
+      <Home1/>
     </View>
   );
 };

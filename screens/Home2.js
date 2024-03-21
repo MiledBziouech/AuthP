@@ -4,9 +4,12 @@ import Health from '../components/Home2/Health'
 import Bpm from '../components/Home2/Bpm'
 import BloodPressure from '../components/Home2/BloodPressure'
 import Ox from '../components/Home2/Ox'
+import SwitchHealthStatus from '../components/Home2/SwitchHealthStatus'
 export default function Home2() {
   return (
     <View  style={{backgroundColor:"hsl(220, 28%, 10%)",flex:1,width:"100%" ,alignItems:"center",justifyContent:"center"}}>
+      <SwitchHealthStatus />
+     
 
 
     
