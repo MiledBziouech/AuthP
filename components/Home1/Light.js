@@ -12,13 +12,13 @@ export default function Light() {
 
             
             <View style={{alignItems:"center"}}>
-                <Text style={{marginVertical:16  ,fontSize:16}}>Light</Text>
+                <Text style={{marginVertical:16  ,fontSize:16,color:"white"}}>Light</Text>
 
                 <TouchableOpacity onPress={() => setIsOn(!isOn)}>
                   <AntDesign name="caretup" size={13} color="hsl(222, 100%, 63%)"  />
                 </TouchableOpacity>
 
-                <Text style={{marginVertical: 10  ,fontSize:15}}>{isOn ? 'On' : 'Off'} </Text>
+                <Text style={{marginVertical: 10  ,fontSize:15,color:"white"}}>{isOn ? 'On' : 'Off'} </Text>
 
                 <TouchableOpacity onPress={() => setIsOn(!isOn)}>
                   <AntDesign name="caretdown" size={13} color="hsl(222, 100%, 63%)" />
@@ -29,7 +29,7 @@ export default function Light() {
             <View style={{justifyContent:"space-around"}}>
                 <EvilIcons name="spinner" size={59} color="hsl(222, 100%, 63%)"  style={{ height:60,marginTop:8}} /> 
                 <View style={{marginBottom:36 }}>
-                    <Text style={{color:"black" ,fontWeight:"600",fontSize:17}}>133ce4</Text>
+                  
                     <Text style={{color:"hsl(217, 99%, 60%)" ,fontWeight:"300"}}>Optimum</Text>
                 </View>
             </View>

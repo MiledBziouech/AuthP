@@ -32,7 +32,7 @@ export default function BloodOxygene() {
       
   return (
     <View style={{justifyContent:"center",alignItems:'center',flex:1,width:"100%"}}>
-    <Text style={{fontSize:20,fontWeight:'bold',color:'black',marginTop:20}}>Blood Oxygene %</Text>
+  
     <LineChart
     data={data}
     width={390}

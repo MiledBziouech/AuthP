@@ -62,12 +62,11 @@ const styles = StyleSheet.create({
         flexDirection: "row",
         justifyContent: "space-between",
         alignItems: "center",
-        
         margin: 10,
          backgroundColor: "hsl(222, 25%, 10%)",
         width: "100%",
         paddingHorizontal: 15,
-
+    
      },
     backContainer: {
         backgroundColor: "hsl(222, 36%, 14%)",

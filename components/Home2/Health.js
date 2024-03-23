@@ -9,7 +9,7 @@ export default function Health() {
             
              <View style={styles.secondConatiner}>
                 
-             <Image source={require("../../assets/heart.png")} style={{width:110, height: 100,}}  />
+             <Image source={require("../../assets/heart.png")} style={{width:110, height: 100}}  />
                  
              </View>
         </View>

@@ -1,4 +1,4 @@
-import { View, Text,StyleSheet ,TouchableOpacity} from 'react-native'
+import { View, Text,StyleSheet ,TouchableOpacity,} from 'react-native'
 import React from 'react'
 
 export default function SwitchStatusHealth() {
@@ -23,9 +23,11 @@ export default function SwitchStatusHealth() {
 const styles = StyleSheet.create({   
     mainContainer: {
      flexDirection: 'row',
-     justifyContent: 'space-between',
-     width: 250,
-     alignItems:"center" 
+     justifyContent: 'space-around',
+     width: "100%",
+     alignItems:"center", 
+     marginVertical : 20,
+     
        
     },
 

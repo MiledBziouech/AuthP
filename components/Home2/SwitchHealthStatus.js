@@ -24,9 +24,10 @@ export default function SwitchHealthStatus() {
 const styles = StyleSheet.create({   
     mainContainer: {
      flexDirection: 'row',
-     justifyContent: 'space-between',
-     width: 250,
-     alignItems:"center"     
+     justifyContent: 'space-around',
+     width: "100%",
+     alignItems:"center"    ,
+     marginBottom:20, 
        
     },
 

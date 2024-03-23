@@ -31,7 +31,8 @@ const styles = StyleSheet.create({
      justifyContent: 'center',
      width: 350,
      alignItems:"center"     ,
-  
+      marginTop: 30,
+      marginBottom: 20
        
     },
 

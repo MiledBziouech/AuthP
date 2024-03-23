@@ -6,10 +6,10 @@ import { StyleSheet } from 'react-native'
 export default function Ox() {
   return (
     <View style={styles.mainContainer}>
-      <Text style={{marginLeft:20,fontSize:16  ,marginBottom:3}}>Blood Oxygen %</Text>
+      <Text style={{marginLeft:20,fontSize:16  ,marginBottom:3,color:"white"}}>Blood Oxygen %</Text>
       <View style={{flexDirection:"row" ,justifyContent:"space-evenly",alignItems:"center" }}> 
         <Image source={require('../../assets/oxygen.png')} style={{width: 40, height: 40}} />
-        <Text style={{fontSize:45, fontWeight:"800"}}>089<Text style={{fontSize:14 ,fontWeight:"400",color:"hsl(216, 5%, 57%)" }}>  %</Text></Text> 
+        <Text style={{fontSize:45, fontWeight:"800",color:"white"}}>089<Text style={{fontSize:18 ,fontWeight:"400",color:"hsl(216, 5%, 57%)" }}>  %</Text></Text> 
         <Text style={{color:' hsl(222, 100%, 63%)'}} >Normal</Text> 
       </View>
     </View>
@@ -19,7 +19,7 @@ export default function Ox() {
 const styles = StyleSheet.create({   
 
 mainContainer: { 
-    width: 361,
+  width:'100%',
     height: 100,
     backgroundColor: "hsl(222, 23%, 14%)",
     borderRadius: 20,

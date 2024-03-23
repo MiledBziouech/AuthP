@@ -33,6 +33,8 @@
           height:260 ,
           width:390,
        
+          marginBottom:20,
+       
 
         },
         separator: {

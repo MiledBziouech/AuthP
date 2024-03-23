@@ -14,7 +14,7 @@ export default function ButtomBar() {
         </TouchableOpacity>
 
         <TouchableOpacity>
-                <Image source={require('../../assets/middleThor.png')} style={{width: 150, height: 150,marginBottom:40,marginHorizontal:-40 }} />
+                <Image source={require('../../assets/middleThor.png')} style={{width: 100, height: 100 }} />
         </TouchableOpacity>
 
         <TouchableOpacity>
