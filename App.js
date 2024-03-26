@@ -6,10 +6,11 @@ import Statistic1 from './screens/Statistic1';
 import Statics2 from './screens/Statics2';
 import Statistics3 from './screens/Statistics3';
 import Profile from './screens/Profile';
+import Notifications1 from './screens/Notifications1';
 const App = () => {
   return (
     <View style={styles.container}>
-      <Profile/>
+      <Notifications1/>
     </View>
   );
 };

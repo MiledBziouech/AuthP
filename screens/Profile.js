@@ -12,12 +12,9 @@ export default function Profile() {
     <SafeAreaView style={{flex:1,width:'100%',justifyContent:"center",alignItems:"center" }}> 
     <ImageBackground source={require('../assets/backGround.png')} style={{backgroundColor:"hsl(220, 28%, 10%)",flex:1,width:"100%" ,alignItems:"center",justifyContent:"center",gap:12  }}>
 <StatusBar hidden={true}  />
-        <AccountInfo/>
-        <AccountVerif/>
-        <Wallet/>
-        <Help/>
-        <AboutUs/>  
-        <LogOut/>
+       
+        <AboutUs/>
+      
         
     </ImageBackground>
     </SafeAreaView>
