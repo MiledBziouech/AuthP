@@ -7,10 +7,12 @@ import Statics2 from './screens/Statics2';
 import Statistics3 from './screens/Statistics3';
 import Profile from './screens/Profile';
 import Notifications1 from './screens/Notifications1';
+import Settings from './screens/Settings';
+
 const App = () => {
   return (
     <View style={styles.container}>
-      <Notifications1/>
+      <Settings />
     </View>
   );
 };
