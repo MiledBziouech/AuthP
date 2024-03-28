@@ -8,11 +8,12 @@ import Statistics3 from './screens/Statistics3';
 import Profile from './screens/Profile';
 import Notifications1 from './screens/Notifications1';
 import Settings from './screens/Settings';
+import Home0 from './screens/Home0';
 
 const App = () => {
   return (
     <View style={styles.container}>
-      <Settings />
+      <Home0 />
     </View>
   );
 };
