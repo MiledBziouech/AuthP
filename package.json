@@ -16,6 +16,7 @@
     "react-native-circular-progress-indicator": "^4.4.2",
     "react-native-cool-speedometer": "^1.2.0",
     "react-native-fast-shadow": "^0.1.0",
+    "react-native-geolocation-service": "^5.3.1",
     "react-native-gesture-handler": "^2.15.0",
     "react-native-shadow-2": "^7.0.8",
     "react-native-shadow-cards": "^1.0.2",
