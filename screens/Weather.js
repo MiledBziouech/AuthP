@@ -5,11 +5,14 @@ import { useEffect ,useState} from 'react'
 import Geolocation from 'react-native-geolocation-service';
 import { Platform, PermissionsAndroid } from 'react-native';
 import MainWeather from '../components/Weather/MainWeather';
+import  HourlyForcast from '../components/Weather/HourlyForcast'; 
+import SecondWeather from '../components/Weather/SecondWeather';
 const openWeatherKey ="2855365d668dbb5d21c1ad7d42f1afee"
-const baseUrl ="https://api.openweathermap.org/data/2.5/weather?"
+const baseUrl ="https://api.openweathermap.org/data/2.5/"
 export default function Weather() {
     const [weather, setWeather] = useState()
     const [location, setLocation] = useState()
+    const [hourlyForcast, setHourlyForcast] = useState()  
 
     async function requestLocationPermission() {
         try {
@@ -53,19 +56,37 @@ export default function Weather() {
         const lat = location.latitude;
         const lon = location.longitude;
 
-        const response = await fetch(`${baseUrl}lat=${lat}&lon=${lon}&appid=${openWeatherKey}&units=metric`)
+        const response = await fetch(`${baseUrl}weather?lat=${lat}&lon=${lon}&appid=${openWeatherKey}&units=metric`)
         const data = await response.json()
-        console.log(data)
-      
         setWeather(data)
+        console.log(data)
+    
     
     }
+    const fetchHourlyForcats = async () => {
+
+
+      
+      if(!location) 
+      {return;}
+      
+      const lat = location.latitude;
+      const lon = location.longitude;
+
+      const response = await fetch(`${baseUrl}forecast?lat=${lat}&lon=${lon}&appid=${openWeatherKey}&units=metric&cnt=8`)
+      const data = await response.json()
+      setHourlyForcast(data.list) 
+     
+ 
+  
+  }
     useEffect(() => {
         if( location )
         fetchWeather()
+        fetchHourlyForcats()
     }, [location])
 
-    if (!weather) {
+    if (!weather || !hourlyForcast) {
         return (
           <ActivityIndicator    size="large" color="#0000ff" /> 
         )
@@ -75,11 +96,15 @@ export default function Weather() {
  
   
     
-    <ImageBackground style={{justifyContent:"center",backgroundColor :"black",flex:1,width:'100%',alignItems:'center'}} source={require('../assets/Wheather.png')} >
+    <ImageBackground style={{justifyContent:"space-around",backgroundColor :"black",flex:1,width:'100%',alignItems:'center'}} source={require('../assets/Wheather.png')} >
       
     <StatusBar hidden={true}  />
-    <MainWeather data={{ description: weather.weather[0].description, temperature: weather.main.temp, max: weather.main.temp_max, min: weather.main.temp_min, state: weather.name }} />
 
+    <MainWeather data={weather} />
+    <SecondWeather data={weather} />
+
+    <HourlyForcast data={hourlyForcast} />  
+    
     
     </ImageBackground>
   

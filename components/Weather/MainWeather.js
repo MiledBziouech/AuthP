@@ -7,21 +7,21 @@ export default function MainWeather({data}) {
      <Entypo name="location-pin" size={37} color="white" style={{marginRight:-20}}  />
     <View style={styles.container}>
     <View  style={{ alignContent:"center",alignItems:"center" ,width:"99%",}}>
-      <Text style={styles.text1}>{data.state}</Text>
+      <Text style={styles.text1}>{data.name}</Text>
     </View>
       <View style={{ alignContent:"center",alignItems:"center" ,width:"99%",}}>
 
-      <Text style={styles.text2}>{Math.round(data.temperature)}<Text >°</Text></Text>
+      <Text style={styles.text2}>{Math.round(data.main.temp)}<Text >°</Text></Text>
       </View>
      
      <View style={{justifyContent:'center',alignItems:'center' ,width:"99%",}}>
 
      <View style={{justifyContent:'center',alignItems:'center',width:"99%"}}>
-      <Text style={styles.text3}>{data.description}</Text>
+      <Text style={styles.text3}>{data.weather[0].description}</Text>
       </View>
      <View style={{flexDirection:'row',justifyContent:'space-evenly',alignItems:'center', marginTop :5 ,width:"72%"  }}>
-      <Text style={styles.text4}>H:{Math.round(data.max)}°</Text>
-      <Text style={styles.text5}>L:{Math.round(data.min)}°</Text>
+      <Text style={styles.text4}>H:{Math.round(data.main.temp_max)}°</Text>
+      <Text style={styles.text5}>L:{Math.round(data.main.temp_min)}°</Text>
       </View>
 
       </View>
@@ -38,7 +38,7 @@ const styles = StyleSheet.create({
       alignItems: 'baseline',
 
         width: "100%",
-     
+        
         
        
         },
