@@ -34,8 +34,11 @@
 		27751B4DCF4546C6BCB41AD1 /* Montserrat-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9278E807946D45038EFD72B2 /* Montserrat-SemiBoldItalic.ttf */; };
 		0D50EBB7AF684BF781644DF7 /* Montserrat-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 61C8F462206F4721BFADB6C6 /* Montserrat-Thin.ttf */; };
 		9CDFF0C3614E4EF7B7F8DBD4 /* Montserrat-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5F26255233F7441AA775CB93 /* Montserrat-ThinItalic.ttf */; };
-		44ED6594C7A5468C849289B1 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 35A012846F4B49409EA5D161 /* OFL.txt */; };
 		BEF2D3DD813C44D2AA23A940 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6D7B2904B09D4FF0AA472CFB /* README.txt */; };
+		29A8AD9273A04DC38548FB6F /* NicoMoji-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5605F11C3D0B4D1EB45C8F3B /* NicoMoji-Regular.ttf */; };
+		80F652661D344F85B593357E /* DESCRIPTION.en_us.html in Resources */ = {isa = PBXBuildFile; fileRef = 492BFEE65F3445DC82320940 /* DESCRIPTION.en_us.html */; };
+		9D8C8E4128E548A18FC396D6 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0B75A7D5F74D4AFA8717628E /* OFL.txt */; };
+		8CE4CE347B1543E5959BA410 /* nicomoji-plus_v0.9.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1CCC55BF6F284B7D805AE906 /* nicomoji-plus_v0.9.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,8 +89,11 @@
 		9278E807946D45038EFD72B2 /* Montserrat-SemiBoldItalic.ttf */ = {isa = PBXFileReference; name = "Montserrat-SemiBoldItalic.ttf"; path = "../assets/fonts/static/Montserrat-SemiBoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		61C8F462206F4721BFADB6C6 /* Montserrat-Thin.ttf */ = {isa = PBXFileReference; name = "Montserrat-Thin.ttf"; path = "../assets/fonts/static/Montserrat-Thin.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		5F26255233F7441AA775CB93 /* Montserrat-ThinItalic.ttf */ = {isa = PBXFileReference; name = "Montserrat-ThinItalic.ttf"; path = "../assets/fonts/static/Montserrat-ThinItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		35A012846F4B49409EA5D161 /* OFL.txt */ = {isa = PBXFileReference; name = "OFL.txt"; path = "../assets/fonts/OFL.txt"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		6D7B2904B09D4FF0AA472CFB /* README.txt */ = {isa = PBXFileReference; name = "README.txt"; path = "../assets/fonts/README.txt"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		5605F11C3D0B4D1EB45C8F3B /* NicoMoji-Regular.ttf */ = {isa = PBXFileReference; name = "NicoMoji-Regular.ttf"; path = "../assets/fonts/NicoMoji-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		492BFEE65F3445DC82320940 /* DESCRIPTION.en_us.html */ = {isa = PBXFileReference; name = "DESCRIPTION.en_us.html"; path = "../assets/fonts/DESCRIPTION.en_us.html"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		0B75A7D5F74D4AFA8717628E /* OFL.txt */ = {isa = PBXFileReference; name = "OFL.txt"; path = "../assets/fonts/OFL.txt"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		1CCC55BF6F284B7D805AE906 /* nicomoji-plus_v0.9.ttf */ = {isa = PBXFileReference; name = "nicomoji-plus_v0.9.ttf"; path = "../assets/fonts/nicomoji-plus_v0.9.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -216,8 +222,11 @@
 				9278E807946D45038EFD72B2 /* Montserrat-SemiBoldItalic.ttf */,
 				61C8F462206F4721BFADB6C6 /* Montserrat-Thin.ttf */,
 				5F26255233F7441AA775CB93 /* Montserrat-ThinItalic.ttf */,
-				35A012846F4B49409EA5D161 /* OFL.txt */,
 				6D7B2904B09D4FF0AA472CFB /* README.txt */,
+				5605F11C3D0B4D1EB45C8F3B /* NicoMoji-Regular.ttf */,
+				492BFEE65F3445DC82320940 /* DESCRIPTION.en_us.html */,
+				0B75A7D5F74D4AFA8717628E /* OFL.txt */,
+				1CCC55BF6F284B7D805AE906 /* nicomoji-plus_v0.9.ttf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -338,8 +347,11 @@
 				27751B4DCF4546C6BCB41AD1 /* Montserrat-SemiBoldItalic.ttf in Resources */,
 				0D50EBB7AF684BF781644DF7 /* Montserrat-Thin.ttf in Resources */,
 				9CDFF0C3614E4EF7B7F8DBD4 /* Montserrat-ThinItalic.ttf in Resources */,
-				44ED6594C7A5468C849289B1 /* OFL.txt in Resources */,
 				BEF2D3DD813C44D2AA23A940 /* README.txt in Resources */,
+				29A8AD9273A04DC38548FB6F /* NicoMoji-Regular.ttf in Resources */,
+				80F652661D344F85B593357E /* DESCRIPTION.en_us.html in Resources */,
+				9D8C8E4128E548A18FC396D6 /* OFL.txt in Resources */,
+				8CE4CE347B1543E5959BA410 /* nicomoji-plus_v0.9.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -33,7 +33,8 @@ const styles = StyleSheet.create({
        justifyContent: 'space-around',
        borderRadius: 15,
        borderWidth: 2,
-       borderColor: 'hsl(220, 4%, 57%)',
+       borderColor: 'rgba(49, 52, 60, 1)',
+        marginTop: 7,  
      
        
     },

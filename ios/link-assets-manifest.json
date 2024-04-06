@@ -2,6 +2,10 @@
   "migIndex": 1,
   "data": [
     {
+      "path": "assets/fonts/DESCRIPTION.en_us.html",
+      "sha1": "ad494e816903a5dd745c8d4f993bf337f882f699"
+    },
+    {
       "path": "assets/fonts/Montserrat-Italic-VariableFont_wght.ttf",
       "sha1": "92d0e87485dff4f41184e3ae9497c5d1795c1827"
     },
@@ -10,8 +14,16 @@
       "sha1": "debd10e57fb07dd24187c41679885129449c1435"
     },
     {
+      "path": "assets/fonts/nicomoji-plus_v0.9.ttf",
+      "sha1": "38fed05701cb478d32ca1b9b7d952f401795fbc6"
+    },
+    {
+      "path": "assets/fonts/NicoMoji-Regular.ttf",
+      "sha1": "f5df26318e31d02faa6fcd45e7768a44eadbf502"
+    },
+    {
       "path": "assets/fonts/OFL.txt",
-      "sha1": "ee06e89d18c443a091644b92d27b2d5aca756bc9"
+      "sha1": "27defbe5fd20df158bc0010eb4b8a527a907f612"
     },
     {
       "path": "assets/fonts/README.txt",

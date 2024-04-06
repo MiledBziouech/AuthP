@@ -11,10 +11,11 @@ import Settings from './screens/Settings';
 import Weather from './screens/Weather';
 import Home0 from './screens/Home0';
 
+
 const App = () => {
   return (
     <View style={styles.container}>
-      <Home2 />
+      <Statistic1 />
     </View>
   );
 };
@@ -25,6 +26,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: '#f0f0f0',
+    
   },
   text: {
     fontSize: 24,

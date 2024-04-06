@@ -6,7 +6,7 @@ export default function Trip() {
   const [count, setCount] = useState(266)
   const  [ecoCount, setEcoCount] = useState(188)
   return (
-    <View>
+    <View style={{marginVertical:14}}>
       <Image  source={require("../../assets/tripImage.png")} style={{width:360, height: 250}}  />
       <Text style={styles.text1}>{count}</Text>    
       <Text style={styles.text2}>{ecoCount}</Text>    
@@ -20,7 +20,8 @@ text1:{
   fontWeight:"bold",
   position:"absolute",
   left:68,
-top:45
+top:45,
+fontFamily:"Montserrat"
 
 },
 text2:{
@@ -29,7 +30,8 @@ text2:{
   fontWeight:"bold",
   position:"absolute",
   left:68,
-  bottom:37
+  bottom:37,
+  fontFamily:"Montserrat"
 
 },
 

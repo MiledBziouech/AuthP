@@ -16,13 +16,14 @@ const percent=ecoUsage/allUsage
 const percentage = percent * 100
 
 return (
-    <View style={{ alignItems: 'center',flex:1 }}>
+    <View style={{ alignItems: 'center',flex:1,justifyContent:"center" }}>
  <View style={{ alignItems: 'center', justifyContent: 'center' }}>
-    <ProgressChart data={[percent]} width={150} height={150} strokeWidth={15} radius={60} chartConfig={{ backgroundColor: 'hsl(222, 25%, 10%)', backgroundGradientFrom: 'hsl(222, 25%, 10%)', backgroundGradientTo: 'hsl(222, 25%, 10%)', decimalPlaces: 2, color: (opacity = 1) => `rgba(8, 135, 253, ${opacity})`, style: { borderRadius: 16 }, }} hideLegend={true} />
-    <Text style={{ position: 'absolute', color: 'white', fontSize: 40, fontWeight: 'bold' }}>{percentage}%</Text>
+    <ProgressChart data={[percent]} width={130} height={130} strokeWidth={10} radius={58} chartConfig={{ backgroundColor: 'rgba(28, 33, 45, 0.8)', backgroundGradientFrom: 'rgba(28, 33, 45, 0.8)', backgroundGradientTo: 'rgba(28, 33, 45, 0.8)', decimalPlaces: 2, color: (opacity = 1) => `rgba(8, 135, 253, ${opacity})`, style: { borderRadius: 16 }, }} hideLegend={true} />
+    <Text style={{ position: 'absolute', color: 'white', fontSize: 36, fontWeight: 'bold' ,fontFamily  :"Montserrat" }}>{percentage}%</Text>
 </View>
-    <Text style={{ color: 'white', fontSize: 22, fontWeight: 'bold', marginTop: 7 }}>eco mode</Text>
-    <Image source={require('../../assets/oldpedal.png')} style={{ width: 50, height: 50, marginTop: 12 }} />
+    <Text style={{ color: 'white', fontSize: 22, fontWeight: 'bold', marginTop: 7, fontFamily: 'nicomoji' }}>eco mode</Text>
+    <Image source={require('../../assets/oldpedal.png')} style={{ width: 40, height: 40, marginTop: 12 }} />
+    
   </View>
 )
 }
