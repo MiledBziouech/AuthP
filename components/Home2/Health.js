@@ -19,7 +19,7 @@ const styles = StyleSheet.create({
 mainConatiner: {    
 width:255,
 height:255,
-borderWidth:3,
+borderWidth:1,
 borderColor:'hsl(222, 98%, 41%)',
 borderRadius:255/2,
 justifyContent:'center',    

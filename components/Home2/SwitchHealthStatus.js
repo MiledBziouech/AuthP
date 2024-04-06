@@ -28,19 +28,22 @@ const styles = StyleSheet.create({
      width: "100%",
      alignItems:"center"    ,
      marginBottom:20, 
+     
        
     },
 
     text1: {
         color: 'white',
-        fontSize: 20,
-        fontWeight: 'bold',
-        marginTop: 7
+        fontSize: 16,
+        fontWeight: '400',
+        marginTop: 7,
+        fontFamily: 'Montserrat',
     },
     text2: {
         color: 'hsl(220, 4%, 57%)',
-        fontSize: 20,
-        fontWeight: 'bold',
+        fontSize: 16,
+        fontWeight: '400',
+        fontFamily: 'Montserrat',
     },
 line: {
 backgroundColor: 'hsl(222, 100%, 44%)',

@@ -14,7 +14,7 @@ export default function Home2() {
 
       <TopPage/>
       <Health/>
-      <Text style={{color:"hsl(222, 100%, 63%)",fontSize:20,fontWeight:"bold",marginVertical:15}}>Health</Text>
+      <Text style={{color:"hsl(222, 100%, 63%)",fontSize:18,fontWeight:"400", fontFamily: 'Montserrat',}}>Health</Text>
       <View style={{width:"100%" ,marginBottom:20,alignItems:"center",justifyContent:"space-between",gap:10}}>
       <SwitchHealthStatus/>
       <Bpm/>
