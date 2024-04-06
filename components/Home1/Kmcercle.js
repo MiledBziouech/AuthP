@@ -1,13 +1,15 @@
 import { View, Text, Button, StyleSheet } from 'react-native'
 import React from 'react'
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
+import { useState } from 'react';
 export default function Kmcercle() {
+const [distance, setDistance] = useState(360);
   return (
     <View style={styles.mainConatiner}>
        <View style={styles.secondConatiner}>
                 <View   style={styles.textContainer}>
                     <MaterialIcons name="flash-on" size={25} color="hsl(222, 96%, 41%)"  />
-                    <Text style={styles.text1}>360</Text>
+                    <Text style={styles.text1}>{distance}</Text>
                     <Text style={styles.text2}>Km</Text>
                 </View>
          
@@ -42,13 +44,14 @@ textContainer: {
 
     justifyContent:'center',
     alignItems:'center',
-    margin:'à',
+    
  }   ,
 text1: {
     fontSize: 60,
     fontWeight: 'bold',
     color: 'hsl(222, 97%, 49%)',
     marginTop:-12,
+    fontFamily:'Montserrat',
     
   },
   text2: {
@@ -56,7 +59,7 @@ text1: {
     fontWeight: '500',
     color: 'hsl(220, 7%, 57%)',
     marginTop:-12,
-   
+    fontFamily:'Montserrat',
   },
 
 

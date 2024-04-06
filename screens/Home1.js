@@ -1,4 +1,4 @@
-import { View, Text, Button,ImageBackground, SafeAreaView,StatusBar,  ScrollView} from 'react-native'
+import { View, Text, Button,ImageBackground, SafeAreaView,StatusBar,  ScrollView,StyleSheet} from 'react-native'
 import React from 'react'
 import TopPage from '../components/Home1/TopPage'
 import Kmcercle from '../components/Home1/Kmcercle'
@@ -10,10 +10,10 @@ import SwitchStatusHealth from '../components/Home1/SwitchStatusHealth';
 import ButtomBar from '../components/Home1/ButtomBar';
 export default function Home1() {
   return (
+
+
     <SafeAreaView style={{flex:1,width:'100%',}}> 
- 
-  
-    
+
     <ImageBackground style={{justifyContent:"space-between",backgroundColor :"black",flex:1,width:'100%',alignItems:'center'}} source={require('../assets/backGround.png')} >
       
     <StatusBar hidden={true}  />
@@ -23,7 +23,7 @@ export default function Home1() {
 
       <Kmcercle />  
 
-      <Text style={{color:"hsl(222, 100%, 63%)",fontSize:20,fontWeight:"bold",marginTop:20}}>Total Charge</Text>
+      <Text style={styles.text}>Total Charge</Text>
       <SwitchStatusHealth />
 
       <View style={{flexDirection:"row",justifyContent:"space-around",width : "100%" ,marginBottom: 20,}}>
@@ -44,3 +44,18 @@ export default function Home1() {
    
   )
 }
+
+const styles = StyleSheet.create({  
+
+text  : {
+  color:"rgba(64, 122, 255, 1)",
+  fontSize:18,
+  fontWeight:"500",
+  marginTop:20,
+  fontFamily  :"Montserrat"
+
+}
+
+
+
+})

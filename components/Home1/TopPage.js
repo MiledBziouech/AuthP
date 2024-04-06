@@ -1,30 +1,32 @@
-import { View, Text,StyleSheet ,Image, ImageBackground} from 'react-native'
+import { View, Text,StyleSheet ,Image, ImageBackground,TouchableOpacity} from 'react-native'
 import React from 'react'
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
+import { useState } from 'react';
 export default function TopPage() {
+    const [name, setName] = useState("wheelz 07");
   return (
     <View style= {styles.mainContainer}>
 
 
-        <View style= {styles.backContainer}>
+        <TouchableOpacity style= {styles.backContainer}>
             <Ionicons name="chevron-back-outline" size={15} color="hsl(222, 100%, 63%)" />
-        </View>
+        </TouchableOpacity>
         
 
-        <View style={styles.imageContainer} >
+        <TouchableOpacity style={styles.imageContainer} >
             <Image source={require("../../assets/face.jpg")} style={styles.image} />    
-        </View>
+        </TouchableOpacity>
 
-        <View style={styles.textConatiner} >
+        <View >
 
             <Text style={styles.text1}>Profit Wolf</Text>
-            <Text style={styles.text2}>wheelz 07</Text>
+            <Text style={styles.text2}>{name}</Text>
             
         </View>
 
 
-         <View style={styles.bellContainer}>
+         <TouchableOpacity style={styles.bellContainer}>
 
             <MaterialCommunityIcons name="bell" size={40 } color="white"  />
             <View style={styles.text3Conatiner}>
@@ -33,10 +35,11 @@ export default function TopPage() {
                 </Text>
             </View>
 
-        </View> 
+        </TouchableOpacity> 
 
 
        
+            <TouchableOpacity>
 
             <ImageBackground source={require("../../assets/parametrebackground.png")}  style={styles.settingsBackImage} >
 
@@ -44,6 +47,7 @@ export default function TopPage() {
 
             </ImageBackground>
 
+            </TouchableOpacity>
          
 
 
@@ -66,6 +70,7 @@ const styles = StyleSheet.create({
          backgroundColor: "hsl(222, 25%, 10%)",
         width: "100%",
         paddingHorizontal: 15,
+ 
     
      },
     backContainer: {
@@ -80,7 +85,7 @@ const styles = StyleSheet.create({
         shadowOffset: { width: 0, height: 4 },
         shadowOpacity: 0.4,
         shadowRadius: 6,
-        elevation: 6, // For Android
+        elevation: 7, // For Android
     },
     image:{
         width: 67,
@@ -104,13 +109,16 @@ const styles = StyleSheet.create({
     text1:{
        
         color: "hsl(218, 3%, 46%)",
-        fontWeight:"600",
+        fontWeight:"500",
         fontSize: 13,
+        fontFamily: "Montserrat",
+
     },
     text2:{
-        fontWeight: "bold",
+        fontWeight: "800",
         color: "white",
         fontSize: 20,
+        fontFamily: "Montserrat",
     },
 
     bellContainer:{

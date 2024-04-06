@@ -13,21 +13,21 @@ const Battery = () => {
     };
     return (
         <View style={styles.container}>
-            <Text style={{color:"white",fontSize:20,marginBottom:20}}>Battery</Text>
+            <Text style={{color:"white",fontSize:15,marginBottom:20, fontFamily: 'Montserrat',fontWeight:"normal",marginTop:-9}}>Battery</Text>
             <View style={[styles.batteryOutline, { height: 160 }]}>
      
                 <View
                     style={[
                         styles.batteryFill,
-                        { height: filledHeight, backgroundColor: 'hsl(214, 92%, 58%)' },
+                        { height: filledHeight, backgroundColor: 'hsl(214, 92%, 58%)' ,},
                     ]}
                     
                 />
-                     <Text style={{color:'black',fontSize:44 ,fontWeight:"700",color:"white"}}>{batteryLevel}</Text>
-                     <Text style={{color:'black',fontSize:30,color:"white",marginBottom:-40}}>%</Text>
+                     <Text style={{color:'black',fontSize:44 ,color:"white",fontFamily: 'Montserrat',fontWeight:"normal"}}>{batteryLevel}</Text>
+                     <Text style={{color:'black',fontSize:30,color:"white",marginBottom:-40 ,fontFamily: 'Montserrat',fontWeight:"normal"}}>%</Text>
             </View>
             <View style={{flexDirection:"row",justifyContent:"center",alignItems:"center",marginTop:15}}>
-            <Text style={{color:"white",fontSize:15 }}>Pedal assist</Text> 
+            <Text style={{color:"white",fontSize:12,fontFamily: 'Montserrat',fontWeight:"normal"}}>Pedal assist</Text> 
                                 <Switch
                         trackColor={{ false: '#767577', true: 'hsl(217, 98%, 46%)' }}
                         thumbColor="hsl(223, 29%, 23%)"
@@ -52,6 +52,12 @@ const styles = StyleSheet.create({
         backgroundColor: 'hsl(222, 23%, 14%)',
         borderRadius: 25,
         padding: 25,
+
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: 2 },
+        shadowOpacity: 0.3,
+        shadowRadius: 4,
+        elevation: 7, // For Android
     },
     batteryOutline: {
         width: 111,

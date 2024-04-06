@@ -1,4 +1,4 @@
-import { View, Text, StyleSheet } from 'react-native'
+import { View, Text, StyleSheet ,TouchableOpacity} from 'react-native'
 import React from 'react'
 import MaterialCommunityIcons   from 'react-native-vector-icons/MaterialCommunityIcons'
 import Ionicons from 'react-native-vector-icons/Ionicons';
@@ -6,9 +6,11 @@ import FontAwesome6 from 'react-native-vector-icons/FontAwesome5'
 export default function TotaleDistance() {
   return (
     <View style={styles.mainContainer}>
-     <Text style={{fontWeight:"300",fontSize:18,color:"white"}}>Total Distance </Text>
-     <Text style={{fontWeight:"300",fontSize:20,color:"white"}}><MaterialCommunityIcons name="map-marker-distance" size={30} color="white" />  20,000 km </Text> 
-    <Text style={{fontWeight:"300",fontSize:16,color:"hsl(222, 100%, 63%)"}}>History  <FontAwesome6 name="chevron-right" size={13} color="hsl(222, 100%, 63%)" /> </Text>
+     <Text style={{fontWeight:"300",fontSize:15,color:"white", fontFamily: 'Montserrat',  fontWeight: 'normal'}}>Total Distance </Text>
+     <Text style={{fontWeight:"300",fontSize:18,color:"white",fontFamily: 'Montserrat',  fontWeight: 'normal'}}><MaterialCommunityIcons name="map-marker-distance" size={25} color="white" />  20,000 km </Text> 
+    <TouchableOpacity>
+    <Text style={{fontWeight:"300",fontSize:12,color:"hsl(222, 100%, 63%)"}}>History  <FontAwesome6 name="chevron-right" size={9} color="hsl(222, 100%, 63%)" /> </Text>
+    </TouchableOpacity>
     </View>
   )
 }
@@ -21,7 +23,12 @@ const styles = StyleSheet.create({
         justifyContent : 'space-around',
         paddingHorizontal : 20,
         paddingVertical : 5,
-        alignItems:"flex-start"
+        alignItems:"flex-start",
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: 2 },
+        shadowOpacity: 0.3,
+        shadowRadius: 4,
+        elevation: 7, // For Android
      },
 
 
