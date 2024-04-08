@@ -16,9 +16,9 @@ export default function Nft({name,price}) {
     </TouchableOpacity>
      <Image source={require('../../assets/bikeNft.png')} style={{width: 97, height: 77}}/> 
    
-     <Text style={{color:"white",fontSize:12,marginTop:5}}>{name}</Text>
+     <Text style={{color:"white",fontSize:12, fontFamily:"Urbanist-SemiBold",marginTop:5}}>{name}</Text>
      <View style={styles.prt}>
-     <Text style={{color:"hsl(239, 79%, 70%)",fontSize:12}}>{price}  <Text style={{color:"white",fontSize:12}}>PRT</Text></Text>
+     <Text style={{color:"hsl(239, 79%, 70%)",fontSize:12, fontFamily:"Urbanist-SemiBold"}}>{price}  <Text style={{color:"white",fontSize:12, fontFamily:"Urbanist-SemiBold"  }}>PRT</Text></Text>
      </View>
     </View>
   )
@@ -26,7 +26,7 @@ export default function Nft({name,price}) {
 const styles = StyleSheet.create({  
     
     mainContainer   : {
-        elevation:10,
+        elevation:7,
 backgroundColor:"hsl(222, 23%, 14%)",
 
 width:160,
@@ -42,7 +42,8 @@ borderRadius:20,
     borderRadius:15,
     elevation:10,
     backgroundColor:"hsl(222, 22%, 22%)",
-borderWidth:1,
+    borderWidth:1,
+   
 
     },
     icon: {
@@ -50,4 +51,6 @@ borderWidth:1,
         top:12,
         right:12,
       },
+
+      
 });

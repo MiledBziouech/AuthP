@@ -32,8 +32,7 @@
           alignItems:"center",
           height:260 ,
           width:390,
-       
-          marginBottom:20,
+          backgroundColor:"transparent"
        
 
         },

@@ -8,7 +8,7 @@ import BloodOxygene from '../components/Statistic2/BloodOxygene'
 import HeartRateBar from '../components/Statistic2/HeartRateBar'
 import BloodPressureBar from '../components/Statistic2/BloodPressureBar'
 import OxBar from '../components/Statistic2/OxBar'
-import TopPage from '../components/Home1/TopPage'
+import TopPage from '../components/Statistic/TopPage'
 import ButtomBar from '../components/Home1/ButtomBar'
 
 

@@ -10,16 +10,16 @@ export default function RewardsNft() {
        
         
         <TouchableOpacity>
-        <View style={{alignItems:"center",}}>
-        <Text style={styles.text1}>Total rewards</Text>
-        <View style={styles.line}></View>
-        </View>
+            <View style={{alignItems:"center",}}>
+                  <Text style={styles.text1}>Total rewards</Text>
+                  <View style={styles.line}></View>
+            </View>
         </TouchableOpacity>
         <TouchableOpacity>
-        <View style={{alignItems:"center"}}>
-         <Text style={styles.text1}>By NFT</Text>
-         <View style={styles.line2}></View>
-         </View>
+              <View style={{alignItems:"center"}}>
+                  <Text style={styles.text1}>By NFT</Text>
+                  <View style={styles.line2}></View>
+              </View>
         </TouchableOpacity>
         
     </View>
@@ -31,23 +31,23 @@ const styles = StyleSheet.create({
      justifyContent: 'center',
      width: 350,
      alignItems:"center"     ,
-      marginTop: 30,
-      marginBottom: 20
+      marginTop: 7,
+      marginBottom: 30
        
     },
 
     text1: {
         color: 'white',
-        fontSize: 22,
-        fontWeight: '300',
-        marginTop: 7
+        fontSize: 15,
+        marginTop: 7,
+        fontFamily: 'Poppins-Medium'
     },
 
 line: {
 backgroundColor: 'hsl(189, 100%, 50%)',
 width: 160,
 height: 3,
-borderRadius: 5,
+borderRadius: 4,
 marginTop: 5
 
  },
@@ -56,7 +56,7 @@ marginTop: 5
 
     width: 160,
     height: 3,
-    borderRadius: 5,
+    borderRadius: 4 ,
     marginTop: 5
     
      },
