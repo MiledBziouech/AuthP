@@ -36,21 +36,26 @@ const styles = StyleSheet.create({
 
     text1: {
         color: 'white',
-        fontSize: 20,
-        fontWeight: 'bold',
-        marginTop: 7
+       
+     
+        marginTop: 3,
+        fontFamily  :"Poppins-Medium",
+        fontSize: 15,
+  
     },
     text2: {
         color: 'white',
-        fontSize: 20,
-        fontWeight: 'bold',
+     
+        fontFamily  :"Poppins-Medium",
+        fontSize: 15,
+    
     },
 line: {
 backgroundColor: 'hsl(222, 100%, 44%)',
 width:120,
 height: 3,
 borderRadius: 5,
-marginTop: 5
+marginTop: 1
 
 
  },
