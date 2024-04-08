@@ -15,7 +15,7 @@ import Home0 from './screens/Home0';
 const App = () => {
   return (
     <View style={styles.container}>
-      <Statistic1 />
+      <Profile />
     </View>
   );
 };

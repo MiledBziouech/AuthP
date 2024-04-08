@@ -8,9 +8,11 @@ export default function LogOut() {
   return (
     <TouchableOpacity style={styles.mainContainer} >
             
-          
-            <Text style={{color:"red",fontSize:20,fontWeight:"bold" ,textAlign:"left"}}><Feather name="log-out" size={30} color="red" />         Sign Out</Text>
-            <AntDesign name="right" size={20} color="white" />
+            <Feather name="log-out" size={25} color="red" />    
+            <View>  
+            <Text style={styles.text}>Sign Out</Text>
+            </View>   
+            <AntDesign name="right" size={15} color="white" />
             
     </TouchableOpacity>
   )
@@ -19,22 +21,25 @@ const styles = StyleSheet.create({
 
 
 mainContainer: {
-width:"95%",
+  width:"95%",
+  height: 49,
   flexDirection: 'row',
   justifyContent:"space-between",
-  alignItems: 'center',
-  padding: 15,  
+  alignItems: "center",
+  
   backgroundColor: 'hsl(223, 25%, 11%)',
+  
   borderRadius: 25,
   
-
-
+  padding: 10,
+  
+  
   shadowColor: '#000',
   shadowOffset: { width: 0, height: 2 },
   shadowOpacity: 0.5,
   shadowRadius: 2,
   elevation: 7,
-
  
 },
+text: {color:"red",fontSize:13,fontFamily:"Inter-Meduim", textAlign:"left",marginLeft:-120,textAlign:"left"}
  })

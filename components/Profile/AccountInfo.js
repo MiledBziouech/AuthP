@@ -5,10 +5,13 @@ import AntDesign    from 'react-native-vector-icons/AntDesign';
 export default function AccountInfo() {
   return (
     <TouchableOpacity style={styles.mainContainer} >
-            
-          
-            <Text style={{color:"white",fontSize:20,fontWeight:"bold", textAlign:"left"}}><MaterialCommunityIcons name="account-circle-outline" size={30} color="hsl(222, 66%, 48%)" />         Account Info</Text>
-            <AntDesign name="right" size={20} color="white" />
+    
+            <MaterialCommunityIcons name="account-circle-outline" size={25} color="hsl(222, 66%, 48%)"  />
+            <View>
+            <Text style={styles.text}>Account Info</Text>
+            </View>
+
+            <AntDesign name="right" size={15} color="white" />
             
     </TouchableOpacity>
   )
@@ -17,14 +20,17 @@ const styles = StyleSheet.create({
 
 
 mainContainer: {
-width:"95%",
-  flexDirection: 'row',
-  justifyContent:"space-between",
-  alignItems: 'center',
-  padding: 15,  
-  backgroundColor: 'hsl(223, 25%, 11%)',
-  borderRadius: 25,
-  
+    width:"95%",
+    height: 49,
+    flexDirection: 'row',
+    justifyContent:"space-between",
+    alignItems: "center",
+ 
+    backgroundColor: 'hsl(223, 25%, 11%)',
+
+    borderRadius: 25,
+
+   padding: 10,
 
 
   shadowColor: '#000',
@@ -35,4 +41,13 @@ width:"95%",
 
  
 },
+
+
+text: {color:"white",
+fontSize:13,
+fontFamily:"Inter-Meduim", 
+textAlign:"left",
+marginLeft:-120,
+textAlign:"left"
+}
  })

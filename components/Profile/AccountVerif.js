@@ -6,10 +6,12 @@ import Octicons from 'react-native-vector-icons/Octicons';
 export default function AccountVerif() {
   return (
     <TouchableOpacity style={styles.mainContainer} >
-            
-          
-            <Text style={{color:"white",fontSize:20,fontWeight:"bold" ,textAlign:"left"}}><Octicons name="verified" size={30} color="hsl(222, 66%, 48%)" />         Account Verification</Text>
-            <AntDesign name="right" size={20} color="white" />
+
+            <Octicons name="verified" size={25} color="hsl(222, 66%, 48%)" />
+            <View>
+            <Text style={styles.text}>Account Verification</Text>
+            </View>
+            <AntDesign name="right" size={15} color="white" />
             
     </TouchableOpacity>
   )
@@ -18,22 +20,27 @@ const styles = StyleSheet.create({
 
 
 mainContainer: {
-width:"95%",
+  width:"95%",
+  height: 49,
   flexDirection: 'row',
   justifyContent:"space-between",
-  alignItems: 'center',
-  padding: 15,  
+  alignItems: "center",
+
   backgroundColor: 'hsl(223, 25%, 11%)',
+
   borderRadius: 25,
-  
+
+ padding: 10,
 
 
-  shadowColor: '#000',
-  shadowOffset: { width: 0, height: 2 },
-  shadowOpacity: 0.5,
-  shadowRadius: 2,
-  elevation: 7,
+shadowColor: '#000',
+shadowOffset: { width: 0, height: 2 },
+shadowOpacity: 0.5,
+shadowRadius: 2,
+elevation: 7,
+
 
  
 },
+text: {color:"white",fontSize:13,fontFamily:"Inter-Meduim", textAlign:"left",marginLeft:-120,textAlign:"left"}
  })
