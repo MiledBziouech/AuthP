@@ -32,7 +32,7 @@ export default function ButtomBar() {
 const styles = StyleSheet.create({
     mainContainer: {
         width: "100%",
-        height: 92,
+        height: 60,
         backgroundColor: 'hsl(224, 28%, 10%)',
         justifyContent: 'center',
         alignItems: 'center',

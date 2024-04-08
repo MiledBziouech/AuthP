@@ -15,13 +15,14 @@ const styles = StyleSheet.create({
 
 text:{
   color:"white",
-  fontSize:20,
-  fontWeight:"bold",
+
   marginTop:20,
   position:"absolute",
     top:30,
     left:89,
-   
+    fontSize:22,
+    fontFamily  :"Montserrat",
+    fontWeight  :"600"
 },
 
 

@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function ShareLog() {
   return (
-    <View>
+    <View style={{backgroundColor:"transparent"}}> 
      <TouchableOpacity style={Styles.container}>
       <Text style={Styles.text}>Share Log</Text>
      </TouchableOpacity>
@@ -13,18 +13,17 @@ export default function ShareLog() {
 const Styles= StyleSheet.create({   
 
     container: {
-       
         backgroundColor: 'hsl(222, 100%, 63%)',
         width: 216,
         height: 52,
         alignItems  : 'center',
         justifyContent: 'center',
-        borderRadius: 20,
+        borderRadius: 40,
       },
       text: {
-        fontSize: 20,
-        fontWeight: '500',
+        fontSize: 16,
         color: 'white',
+        fontFamily:"Poppins-Medium" 
       },
 
 
