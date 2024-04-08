@@ -13,13 +13,15 @@ export default function Switches() {
         offColor: "white",
         thumbOffStyle: {backgroundColor: "rgba(105, 121, 248, 1)"},
         thumbOnStyle: {backgroundColor: "rgba(105, 121, 248, 1)"},
-        size: "large",
+        size: "medium",
    
       };
   return (
     <View style={styles.mainContainer}>
+
+
     <View style={{justifyContent:"space-between",flexDirection:"row" ,alignItems:"center",width:"98%",padding:20}}> 
-     <Text style={{color:"white",fontSize:20,fontWeight:"bold"}}>Auto Connect</Text>
+     <Text style={styles.text}>Auto Connect</Text>
          <ToggleSwitch
   isOn={isEnabled}
   onToggle={isOn => handleToggle(isEnabled) }
@@ -28,7 +30,7 @@ export default function Switches() {
 />
  </View>
  <View style={{justifyContent:"space-between",flexDirection:"row" ,alignItems:"center",width:"98%",padding:20}}> 
-     <Text style={{color:"white",fontSize:20,fontWeight:"bold"}}>Auto Connect</Text>
+     <Text style={styles.text}>Lock On Disconnection</Text>
          <ToggleSwitch
   isOn={isEnabled}
   onToggle={isOn => handleToggle(isEnabled) }
@@ -37,7 +39,7 @@ export default function Switches() {
 />
  </View>
  <View style={{justifyContent:"space-between",flexDirection:"row" ,alignItems:"center",width:"98%",padding:20}}> 
-     <Text style={{color:"white",fontSize:20,fontWeight:"bold"}}>View Notifications</Text>
+     <Text style={styles.text}>View Notifications</Text>
          <ToggleSwitch
   isOn={isEnabled}
   onToggle={isOn => handleToggle(isEnabled) }
@@ -46,7 +48,7 @@ export default function Switches() {
 />
  </View>
  <View style={{justifyContent:"space-between",flexDirection:"row" ,alignItems:"center",width:"98%",padding:20}}> 
-     <Text style={{color:"white",fontSize:20,fontWeight:"bold"}}>Light Sensor</Text>
+     <Text style={styles.text}>Light Sensor</Text>
          <ToggleSwitch
   isOn={isEnabled}
   onToggle={isOn => handleToggle(isEnabled) }
@@ -62,11 +64,19 @@ const styles = StyleSheet.create({
 
     mainContainer: {   
         gap:-30,
-        backgroundColor:"hsl(222, 23%, 14%)",
+        backgroundColor:"hsl(223, 25%, 11%)",
         borderRadius: 10,
         width: "95%",
         elevation: 7,
+        height:162,
+        marginBottom:20,
      },
+     text:{
+      fontFamily: "Poppins-Medium",
+      color:"white",
+      fontSize:16,
+
+     }
   
 });
       

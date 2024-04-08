@@ -8,8 +8,8 @@ export default function ProductId() {
     <TouchableOpacity style={styles.mainContainer} >
             
           
-            <Text style={{color:"white",fontSize:20,fontWeight:"bold" ,textAlign:"left",marginLeft:12}}>Product ID </Text>
-            <AntDesign name="right" size={20} color="white" />
+            <Text style={styles.text}>Product ID </Text>
+            <AntDesign name="right" size={18} color="white" />
             
     </TouchableOpacity>
   )
@@ -19,21 +19,30 @@ const styles = StyleSheet.create({
 
 mainContainer: {
 width:"95%",
+height:48,
   flexDirection: 'row',
   justifyContent:"space-between",
   alignItems: 'center',
-  padding: 15,  
+  padding: 10,  
   backgroundColor: 'hsl(223, 25%, 11%)',
   borderRadius: 25,
   
-
-
+  
   shadowColor: '#000',
   shadowOffset: { width: 0, height: 2 },
   shadowOpacity: 0.5,
   shadowRadius: 2,
   elevation: 7,
 
+
  
 },
+text: {
+  color: 'white',
+  fontSize: 16,
+  fontFamily: "Poppins-Medium",
+  textAlign: 'center',
+ textAlign:"left",
+ marginLeft:12
+}
  })
