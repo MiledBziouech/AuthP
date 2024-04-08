@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet,SafeAreaView } from 'react-native';
 import Home1 from './screens/Home1';
 import Home2 from './screens/Home2';
 import Statistic1 from './screens/Statistic1';
@@ -14,9 +14,9 @@ import Home0 from './screens/Home0';
 
 const App = () => {
   return (
-    <View style={styles.container}>
-      <Profile />
-    </View>
+    <SafeAreaView style={styles.container}>
+      <Notifications1 />
+    </SafeAreaView>
   );
 };
 

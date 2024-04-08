@@ -2,20 +2,20 @@ import { View, Text ,TouchableOpacity,StyleSheet,Image} from 'react-native'
 import React from 'react'
 import Octicons from 'react-native-vector-icons/Octicons';
 
-export default function ReadedNotifications({name,discription,time}) {
+export default function ReadedNotifications({name,discription}) {
   return (
     <TouchableOpacity style={styles.mainContainer}>
             <View style={{justifyContent:'flex-start',alignItems:'center',flexDirection:"row"}}>
             
            
             <Image source={require('../../assets/face.jpg')} style={{width:55,height: 55,marginLeft:10 ,borderRadius:27}} />
-            <View style={{marginLeft:10,gap:5}}>
-            <Text style={{color:"white",fontSize:20,fontWeight:"bold" ,textAlign:"left"}}>{name}</Text>
-            <Text style={{color:"white",fontSize:13,fontWeight:"bold" ,textAlign:"left",color:"rgba(125, 120, 120, 1)"}}>{discription}</Text>
+            <View style={{marginLeft:10,gap:1}}>
+            <Text style={styles.name}>{name}</Text>
+            <Text style={styles.description}>{discription}</Text>
             </View>
             </View>
          
-            <Text style={{color:"white",fontSize:13,fontWeight:"bold" ,textAlign:"left",color:"rgba(125, 120, 120, 1)"}}>{time}</Text>
+            <Text style={styles.time}>2m</Text>
           
     </TouchableOpacity>
   )
@@ -32,5 +32,8 @@ const styles=StyleSheet.create({
         
   
     },  
+    name: {color:"white",fontSize:16 ,textAlign:"left",fontFamily:"Poppins-Medium"},
+    description: {fontSize:12 ,textAlign:"left",color:"rgba(125, 120, 120, 1)" ,fontFamily:"Poppins-Regular"},
 
-})  
+    time: {fontFamily:"Poppins-Regular" ,fontSize:10,textAlign:"left",color:"rgba(125, 120, 120, 1)"}
+  })  

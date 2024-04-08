@@ -9,13 +9,13 @@ export default function UnreadNotifications({name,discription,time}) {
             <Octicons name="dot-fill" size={20} color="hsl(222, 66%, 48%)" />
            
             <Image source={require('../../assets/face.jpg')} style={{width:55,height: 55,marginLeft:10 ,borderRadius:27}} />
-            <View style={{marginLeft:10,gap:5}}>
-            <Text style={{color:"white",fontSize:20,fontWeight:"bold" ,textAlign:"left"}}>{name}</Text>
-            <Text style={{color:"white",fontSize:13,fontWeight:"bold" ,textAlign:"left",color:"rgba(125, 120, 120, 1)"}}>{discription}</Text>
+            <View style={{marginLeft:10,gap:1}}>
+            <Text style={styles.name}>{name}</Text>
+            <Text style={styles.description}>{discription}</Text>
             </View>
             </View>
          
-            <Text style={{color:"white",fontSize:13,fontWeight:"bold" ,textAlign:"left",color:"rgba(125, 120, 120, 1)"}}>{time}</Text>
+            <Text style={styles.time}>2m</Text>
           
     </TouchableOpacity>
   )
@@ -32,5 +32,9 @@ const styles=StyleSheet.create({
         
   
     },  
+    name: {color:"white",fontSize:16 ,textAlign:"left",fontFamily:"Poppins-Medium"},
+    description: {fontSize:12 ,textAlign:"left",color:"rgba(125, 120, 120, 1)" ,fontFamily:"Poppins-Regular"},
+
+    time: {fontFamily:"Poppins-Regular" ,fontSize:10,textAlign:"left",color:"rgba(125, 120, 120, 1)"}
 
 })  

@@ -1,4 +1,4 @@
-import { View, Text,StyleSheet ,Image, ImageBackground} from 'react-native'
+import { View, Text,StyleSheet ,Image, ImageBackground,TouchableOpacity} from 'react-native'
 import React from 'react'
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
@@ -7,14 +7,14 @@ export default function TopPage() {
     <View style= {styles.mainContainer}>
 
 
-        <View style= {styles.backContainer}>
+        <TouchableOpacity style= {styles.backContainer}>
             <Ionicons name="chevron-back-outline" size={15} color="hsl(222, 100%, 63%)" />
-        </View>
+        </TouchableOpacity>
         
 
-        <View style={styles.imageContainer} >
+        <TouchableOpacity style={styles.imageContainer} >
             <Image source={require("../../assets/face.jpg")} style={styles.image} />    
-        </View>
+        </TouchableOpacity>
 
         <View style={styles.textConatiner} >
 
@@ -24,21 +24,22 @@ export default function TopPage() {
         </View>
 
 
-         <View style={styles.bellContainer}>
+         <TouchableOpacity style={styles.bellContainer}>
 
             <MaterialCommunityIcons name="bell" size={40 } color="hsl(222, 97%, 42%)"  />
       
 
-        </View> 
+        </TouchableOpacity> 
 
 
        
-
+            <TouchableOpacity>
             <ImageBackground source={require("../../assets/parametrebackground.png")}  style={styles.settingsBackImage} >
 
             <Ionicons name="settings" size={24}   style={styles.settingsIcon}/>
 
             </ImageBackground>
+            </TouchableOpacity>
 
          
 
@@ -100,13 +101,16 @@ const styles = StyleSheet.create({
     text1:{
        
         color: "hsl(218, 3%, 46%)",
-        fontWeight:"600",
+        fontWeight:"500",
         fontSize: 13,
+        fontFamily: "Montserrat",
+
     },
     text2:{
-        fontWeight: "bold",
+        fontWeight: "800",
         color: "white",
         fontSize: 20,
+        fontFamily: "Montserrat",
     },
 
     bellContainer:{
