@@ -38,6 +38,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     height: 50,
     borderRadius: 25,
+    marginTop: -30,
   },
   rain: {
     flexDirection: 'row',
@@ -48,10 +49,10 @@ const styles = StyleSheet.create({
   },
   text : {  
     color: 'white',
-    fontSize: 16,
-    fontWeight: 'bold',
-    color: 'white' ,marginLeft:4
+    fontSize: 14,
+
+    color: 'white' ,
+    marginLeft:4,
+    fontFamily:"Alata-Regular"
   } 
-
-
  })  

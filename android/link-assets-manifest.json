@@ -2,6 +2,82 @@
   "migIndex": 1,
   "data": [
     {
+      "path": "assets/fonts/Alata-Regular.ttf",
+      "sha1": "43d1232d168d2dbd2606dd43a2b530646d35ff5a"
+    },
+    {
+      "path": "assets/fonts/AzeretMono-Black.ttf",
+      "sha1": "6fded021583f1e822b7107234d1465a3711ac5ed"
+    },
+    {
+      "path": "assets/fonts/AzeretMono-BlackItalic.ttf",
+      "sha1": "f089388f87a1c6e18b688672bdee971ba843d789"
+    },
+    {
+      "path": "assets/fonts/AzeretMono-Bold.ttf",
+      "sha1": "a0d47760d9c444142201677cad79a460aaeb2f40"
+    },
+    {
+      "path": "assets/fonts/AzeretMono-BoldItalic.ttf",
+      "sha1": "dc4a9d0117439c5cc6e02eee64e32d30c6cc2ca7"
+    },
+    {
+      "path": "assets/fonts/AzeretMono-ExtraBold.ttf",
+      "sha1": "9b77e533c05f2db1c2ef73b8d310655d5742fbeb"
+    },
+    {
+      "path": "assets/fonts/AzeretMono-ExtraBoldItalic.ttf",
+      "sha1": "f21ec8631839c2c846b586b41cbbcb785fe2278a"
+    },
+    {
+      "path": "assets/fonts/AzeretMono-ExtraLight.ttf",
+      "sha1": "2de45e24db36c0507a494d008376fad893e14d4a"
+    },
+    {
+      "path": "assets/fonts/AzeretMono-ExtraLightItalic.ttf",
+      "sha1": "896e14c4e56c37f9854220089298981c8e547431"
+    },
+    {
+      "path": "assets/fonts/AzeretMono-Italic.ttf",
+      "sha1": "497f1c4d38ed91aa51aab15c982379dbde20a91a"
+    },
+    {
+      "path": "assets/fonts/AzeretMono-Light.ttf",
+      "sha1": "1e7838627efcf5773804a6553e84bb5f4c8af863"
+    },
+    {
+      "path": "assets/fonts/AzeretMono-LightItalic.ttf",
+      "sha1": "39dcdc76dc878d969590bd6a04db9f47c293b318"
+    },
+    {
+      "path": "assets/fonts/AzeretMono-Medium.ttf",
+      "sha1": "59d52761c001c6a4a7a0055e445b1ce803459af0"
+    },
+    {
+      "path": "assets/fonts/AzeretMono-MediumItalic.ttf",
+      "sha1": "f19c149b8dc84a27ec92023107778abbf544e595"
+    },
+    {
+      "path": "assets/fonts/AzeretMono-Regular.ttf",
+      "sha1": "774ec8898b73224b910ceba1e9ed7fa4091de33c"
+    },
+    {
+      "path": "assets/fonts/AzeretMono-SemiBold.ttf",
+      "sha1": "5998e15b6787670c29cb6ee1d834a1e65242ef44"
+    },
+    {
+      "path": "assets/fonts/AzeretMono-SemiBoldItalic.ttf",
+      "sha1": "13a953a115b3ed9d50f7bef3fc967a401a2e4654"
+    },
+    {
+      "path": "assets/fonts/AzeretMono-Thin.ttf",
+      "sha1": "3287faec01f47edf625bd827649c982ce294542d"
+    },
+    {
+      "path": "assets/fonts/AzeretMono-ThinItalic.ttf",
+      "sha1": "8494cb530d78c2ea1e7579af00adc6a3057ce4b5"
+    },
+    {
       "path": "assets/fonts/DESCRIPTION.en_us.html",
       "sha1": "ad494e816903a5dd745c8d4f993bf337f882f699"
     },
@@ -59,7 +135,7 @@
     },
     {
       "path": "assets/fonts/OFL.txt",
-      "sha1": "9f27955a401cc9ea5ba3503027a4ea502c87e70c"
+      "sha1": "942061b0d6577729d16beaa2137f084cc4108a44"
     },
     {
       "path": "assets/fonts/Poppins-Black.ttf",

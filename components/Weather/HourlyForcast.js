@@ -15,7 +15,7 @@ export default function HourlyForcast({data}) {
           <Text style={styles.text} >Hourly Forcast</Text>  
           </TouchableOpacity>
           <TouchableOpacity>
-          <Text style={styles.text}  >Next 24 hours</Text>
+          <Text style={styles.text}  >weakly forcast</Text>
           </TouchableOpacity>
     
         </View>
@@ -48,7 +48,7 @@ const styles = StyleSheet.create({
         backgroundColor: 'rgba(28, 33, 45, 0.6)',
         height: 270,
         borderRadius: 10,
-        
+        marginBottom: 20,
        
     },
     textContainer: {

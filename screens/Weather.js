@@ -7,9 +7,14 @@ import { Platform, PermissionsAndroid } from 'react-native';
 import MainWeather from '../components/Weather/MainWeather';
 import  HourlyForcast from '../components/Weather/HourlyForcast'; 
 import SecondWeather from '../components/Weather/SecondWeather';
+import TopPage from '../components/Home1/TopPage';
+
+
 const openWeatherKey ="2855365d668dbb5d21c1ad7d42f1afee"
 const baseUrl ="https://api.openweathermap.org/data/2.5/"
 export default function Weather() {
+
+
     const [weather, setWeather] = useState()
     const [location, setLocation] = useState()
     const [hourlyForcast, setHourlyForcast] = useState()  
@@ -96,10 +101,11 @@ export default function Weather() {
  
   
     
-    <ImageBackground style={{justifyContent:"space-around",backgroundColor :"black",flex:1,width:'100%',alignItems:'center'}} source={require('../assets/Wheather.png')} >
+    <ImageBackground style={{justifyContent:"space-between",backgroundColor :"black",flex:1,width:'100%',alignItems:'center'}} source={require('../assets/Wheather.png')} >
       
     <StatusBar hidden={true}  />
-
+    <TopPage 
+     />
     <MainWeather data={weather} />
     <SecondWeather data={weather} />
 

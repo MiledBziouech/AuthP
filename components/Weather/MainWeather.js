@@ -38,6 +38,7 @@ const styles = StyleSheet.create({
       alignItems: 'baseline',
 
         width: "100%",
+        marginTop: -40,
         
         
        
@@ -51,10 +52,10 @@ const styles = StyleSheet.create({
     },
     text1: {
         
-      fontSize: 40,
-      fontWeight: '200',
+      fontSize: 34,
       color: 'white',
       textAlign : 'center',
+      fontFamily:"AzeretMono-Regular"
     },
     text2: {
         fontSize: 90,
@@ -67,6 +68,7 @@ const styles = StyleSheet.create({
         fontWeight: '400',
         color: 'hsl(233, 5%, 63%)',
         textAlign : 'center',
+        
       },
       text5: {
         fontSize: 16,
