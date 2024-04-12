@@ -15,7 +15,7 @@ import Notifications2 from './screens/Notifications2';
 const App = () => {
   return (
     <SafeAreaView style={styles.container}>
-      <Weather />
+      <Home0/>
     </SafeAreaView>
   );
 };

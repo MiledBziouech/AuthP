@@ -4,27 +4,50 @@ import React from 'react'
 export default function BikeHealth() {
   return (
     <View  style={styles.mainContainer}>
-        <TouchableOpacity style={{width: 50, height: 50,alignContent:"center",justifyContent:"center"}}   >
-        <Image style={{width: 300, height: 300,}} source={require('../../assets/Home0/heart.png')} />
-        
+        <TouchableOpacity   >
+          
+        <Image style={{width: 50, height: 50}} source={require('../../assets/Home0/back.png')} />
+        <Text style={styles.text}>Bike</Text>
      
         </ TouchableOpacity>
-        <TouchableOpacity style={{width: 50, height: 50,alignContent:"center",justifyContent:"center"}}   >
-        <Image style={{width: 300, height: 300,}} source={require('../../assets/Home0/bike.png')} />
-     
+
+        <TouchableOpacity  >
+
+        <Image style={{width: 50, height: 50}} source={require('../../assets/Home0/back.png')} />
+        <Text style={styles.text}>Health</Text>
+
         </ TouchableOpacity>
     </View>
   )
 }
 const styles = StyleSheet.create({
     mainContainer: {
-      flex: 1,
+      
       alignItems:"center",
       justifyContent:"space-between" ,
       flexDirection:'row',
-      width:'50%',
-      height:'120',
+      width:'48%',
+      height:120,
+      backgroundColor:'rgba(28, 33, 45, 1)',
+      marginLeft:5,
+      padding:15,
+      borderRadius:20,
+      
+      shadowColor: '#000',
+      shadowOffset: { width: 0, height: 2 },
+      shadowOpacity: 0.5,
+      shadowRadius: 2,
+      elevation: 7,
     },
+    text : {
+      marginTop:10,
+      color:'white',
+      fontSize:14,
+     
+      textAlign:'center',
+      fontFamily:'Montserrat',
+      fontWeight:'500',
+    } 
 
 
  } )

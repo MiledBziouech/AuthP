@@ -10,9 +10,11 @@ import Speedometer, {
     Indicator,
   } from 'react-native-cool-speedometer';
 export default function SpeedMoter() {
-    const [speed, setSpeed] = useState(48)
+    const [speed, setSpeed] = useState(70)
   return (
-    <View>
+    <View style={styles.mainContainer}>
+
+      <View style={{ top:55}}>
         <Text style={styles.text}>KM/HR</Text>
         <Text style={styles.text2}>{speed}</Text>
 
@@ -54,6 +56,7 @@ export default function SpeedMoter() {
   />
  
 </Speedometer>
+</View>
     </View>
   )
 }
@@ -68,12 +71,35 @@ text: {
     fontWeight:"bold"
     ,color:"white",
     height:128,
-    position:"absolute",left:105,top:115
+    position:"absolute",left:105,top:115,
+    fontFamily  : "Azonix-Regular"
 },
 text2 : {
     fontSize:40 ,
     fontWeight:"bold"
     ,color:"white",
     height:128,
-    position:"absolute",left:105,top:65}
+    position:"absolute",
+    left:105,
+    top:65,
+    fontFamily  : "Azonix-Regular"
+  
+  
+  },
+  mainContainer: {
+
+    height: 170,
+   width: "90%",
+    backgroundColor: 'rgba(28, 33, 45, 1)',
+    justifyContent  : "center", 
+    alignItems : "center",  
+    borderRadius: 20, 
+    shadowColor: '#000',
+
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.5,
+    shadowRadius: 2,
+    elevation: 7,
+
+   },
 } )     

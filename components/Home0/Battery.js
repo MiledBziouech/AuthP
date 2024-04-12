@@ -13,7 +13,7 @@ export default function Battery() {
         <View style={[styles.branch,{backgroundColor:battery > 50 ? "rgba(1, 255, 255, 1)" : "rgba(41, 190, 182, 0.5)"}]}></View>
         <View style={[styles.branch,{backgroundColor:battery > 75 ? "rgba(1, 255, 255, 1)" : "rgba(41, 190, 182, 0.5)"}]}></View>
       </View>
-      <Text style={styles.text}>{battery}   %</Text>
+      <Text style={styles.text2}>{battery} %</Text>
       
     </View>
   )
@@ -24,8 +24,8 @@ mainContainer: {
   alignItems:"center",
   justifyContent:"space-between" ,
   flexDirection:'row',
-  width:'93%',
-
+  width:'90%',
+  
 },
 branch: {
   width: 40,
@@ -36,8 +36,17 @@ branch: {
 },
 text: {
   color: 'white',
-  fontSize: 20,
-  fontWeight: 'bold',}
+  fontSize: 18,
+  fontWeight: 'bold',
+  fontFamily: 'Azonix-Regular',},
+  text2: {
+    color: 'white',
+    fontSize: 24,
+    fontWeight: 'bold',
+    fontFamily: 'Azonix-Regular',}
+  
+
+}
 
 
-})
+)
