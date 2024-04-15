@@ -15,7 +15,7 @@ import StopScreen from './screens/PauseStopSuccess/StopScreen';
 const App = () => {
   return (
     <SafeAreaView style={styles.container}>
-      <StopScreen/>
+      <Statistics3/>
     </SafeAreaView>
   );
 };

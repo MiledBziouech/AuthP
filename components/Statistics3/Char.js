@@ -10,12 +10,12 @@ import {
   } from "react-native-chart-kit";
 
 
-export default function TotalRewards() {
+export default function Char({Data}) {
     const data = {
         labels: ['Mon', 'Tue', 'Wed', 'Tru', 'Fri', 'Sun'],
         datasets: [
           {
-            data: [76, 64, 79, 68, 70, 79], // Random heart rate values
+            data: Data 
             
           },
         ],
