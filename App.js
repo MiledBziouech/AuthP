@@ -11,11 +11,11 @@ import Settings from './screens/Settings';
 import Weather from './screens/Weather';
 import Home0 from './screens/Home0';
 import Notifications2 from './screens/Notifications2';
-
+import StopScreen from './screens/PauseStopSuccess/StopScreen';
 const App = () => {
   return (
     <SafeAreaView style={styles.container}>
-      <Home0/>
+      <StopScreen/>
     </SafeAreaView>
   );
 };
