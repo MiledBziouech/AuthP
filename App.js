@@ -14,10 +14,11 @@ import Notifications2 from './screens/Notifications2';
 import StopScreen from './screens/PauseStopSuccess/StopScreen';
 import HourGlass from './screens/marketplace/HourGlass';
 import CommnBox from './screens/marketplace/CommonBox';
+import MyNft from './screens/marketplace/MyNft';
 const App = () => {
   return (
     <SafeAreaView style={styles.container}>
-      <CommnBox/>
+      <MyNft/>
     </SafeAreaView>
   );
 };
