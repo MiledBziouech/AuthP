@@ -10,7 +10,7 @@ import Speedometer, {
     Indicator,
   } from 'react-native-cool-speedometer';
 export default function SpeedMoter() {
-    const [speed, setSpeed] = useState(70)
+    const [speed, setSpeed] = useState(90)
   return (
     <View style={styles.mainContainer}>
 

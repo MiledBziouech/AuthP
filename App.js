@@ -12,11 +12,12 @@ import Weather from './screens/Weather';
 import Home0 from './screens/Home0';
 import Notifications2 from './screens/Notifications2';
 import StopScreen from './screens/PauseStopSuccess/StopScreen';
-import Booster from './screens/marketplace/Booster';
+import HourGlass from './screens/marketplace/HourGlass';
+import CommnBox from './screens/marketplace/CommonBox';
 const App = () => {
   return (
     <SafeAreaView style={styles.container}>
-      <Booster/>
+      <CommnBox/>
     </SafeAreaView>
   );
 };

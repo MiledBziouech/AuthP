@@ -3,7 +3,7 @@ import React from 'react'
 import AntDesign from 'react-native-vector-icons/AntDesign'
 import { useState } from 'react';
 export default function ItemSwitcher() {
-    const texts = ['Hourglass', 'Runners',]; // Add your texts here
+    const texts = ['Hourglass', 'Runners',"CommonBox"]; // Add your texts here
     const [currentIndex, setCurrentIndex] = useState(0);
   
     const handleLeftClick = () => {
@@ -33,7 +33,7 @@ const styles = StyleSheet.create({
         
     flexDirection:'row',
     justifyContent:'space-between',
-    width:'60%',
+    width:'65%',
     alignItems:"center", 
 
 },
