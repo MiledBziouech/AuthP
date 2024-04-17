@@ -126,6 +126,14 @@
       "sha1": "debd10e57fb07dd24187c41679885129449c1435"
     },
     {
+      "path": "assets/fonts/MontserratSubrayada-Bold.ttf",
+      "sha1": "f096480b5321a60a39a7f484667b9503dac2cf28"
+    },
+    {
+      "path": "assets/fonts/MontserratSubrayada-Regular.ttf",
+      "sha1": "3e71a04f1264a71081fbb47191619c27d2844f06"
+    },
+    {
       "path": "assets/fonts/nicomoji-plus_v0.9.ttf",
       "sha1": "38fed05701cb478d32ca1b9b7d952f401795fbc6"
     },
@@ -135,7 +143,7 @@
     },
     {
       "path": "assets/fonts/OFL.txt",
-      "sha1": "942061b0d6577729d16beaa2137f084cc4108a44"
+      "sha1": "c4583b9c486847a368ecdf4a756e122cc32af924"
     },
     {
       "path": "assets/fonts/Poppins-Black.ttf",

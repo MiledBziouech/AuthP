@@ -15,7 +15,7 @@ const styles = StyleSheet.create({
 
         mainContainer: { 
             
-          width:180,
+          width:160,
           height: 40,
         borderWidth: 1,
         borderColor: 'rgba(64, 122, 255, 1)',

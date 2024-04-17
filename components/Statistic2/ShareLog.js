@@ -3,11 +3,11 @@ import React from 'react'
 
 export default function ShareLog() {
   return (
-    <View style={{backgroundColor:"transparent"}}> 
+    
      <TouchableOpacity style={Styles.container}>
       <Text style={Styles.text}>Share Log</Text>
      </TouchableOpacity>
-    </View>
+  
   )
 }
 const Styles= StyleSheet.create({   

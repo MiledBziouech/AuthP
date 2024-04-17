@@ -1,14 +1,14 @@
 import { View, Text } from 'react-native'
 import React from 'react'
 
-
+import { LineChart } from 'react-native-chart-kit'  
 
 export default function HeartRateChart() {
     const data = {
         labels: ['Mon', 'Tue', 'Wed', 'Tru', 'Fri', 'Sun'],
         datasets: [
           {
-            data: [76, 64, 79, 68, 70, 79], // Random heart rate values
+            data: [90, 8, 7, 9, 70, 0], // Random heart rate values
             
           },
         ],

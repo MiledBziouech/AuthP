@@ -15,7 +15,7 @@ const styles = StyleSheet.create({
 
         mainContainer: { 
             
-          width:180,
+          width:160,
           height: 40,
      
        
@@ -29,6 +29,7 @@ const styles = StyleSheet.create({
              fontFamily: 'Poppins-Meduim',
              color: 'white',
              fontSize: 16,
+            
 
 
         }
