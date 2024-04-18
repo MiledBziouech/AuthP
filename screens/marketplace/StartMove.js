@@ -56,9 +56,9 @@ text2:{
    },
    ScrollView:{
 
-  
-    marginBottom  : 20,
-
+  width:'100%',
+  marginBottom  : 20,
+ 
 
    
     

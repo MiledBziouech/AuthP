@@ -16,10 +16,11 @@ import HourGlass from './screens/marketplace/HourGlass';
 import CommnBox from './screens/marketplace/CommonBox';
 import MyNft from './screens/marketplace/MyNft';
 import StartMove from './screens/marketplace/StartMove';
+import Favourite from './screens/marketplace/Favourite';
 const App = () => {
   return (
     <SafeAreaView style={styles.container}>
-      <StartMove/>
+      <Favourite/>
     </SafeAreaView>
   );
 };
