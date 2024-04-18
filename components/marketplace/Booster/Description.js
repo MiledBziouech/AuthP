@@ -32,6 +32,6 @@ const styles = StyleSheet.create({
     fontFamily  : "Poppins-Bold",
     fontSize    : 26,
     color       : 'white',
-    marginBottom: 10,
+    
   },
 });

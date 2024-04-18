@@ -17,10 +17,11 @@ import CommnBox from './screens/marketplace/CommonBox';
 import MyNft from './screens/marketplace/MyNft';
 import StartMove from './screens/marketplace/StartMove';
 import Favourite from './screens/marketplace/Favourite';
+import MyItem from './screens/marketplace/MyItem';
 const App = () => {
   return (
     <SafeAreaView style={styles.container}>
-      <Favourite/>
+      <MyItem/>
     </SafeAreaView>
   );
 };
