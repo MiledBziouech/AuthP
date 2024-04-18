@@ -1,4 +1,4 @@
-import { View, Text, Button,ImageBackground, SafeAreaView,StatusBar,  ScrollView,Image,StyleSheet} from 'react-native'
+import { View, ImageBackground, SafeAreaView,StatusBar,Image,StyleSheet} from 'react-native'
 import React from 'react'
 import TopPage from '../../components/Home1/TopPage'
 

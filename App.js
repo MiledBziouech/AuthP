@@ -18,11 +18,27 @@ import MyNft from './screens/marketplace/MyNft';
 import StartMove from './screens/marketplace/StartMove';
 import Favourite from './screens/marketplace/Favourite';
 import MyItem from './screens/marketplace/MyItem';
+import {NavigationContainer} from '@react-navigation/native';
+import {createNativeStackNavigator} from '@react-navigation/native-stack';
+const Stack = createNativeStackNavigator();
+
+
+
+
+
 const App = () => {
   return (
-    <SafeAreaView style={styles.container}>
-      <MyItem/>
-    </SafeAreaView>
+        <NavigationContainer>
+      <Stack.Navigator screenOptions={{ animation: 'none' }}>
+        <Stack.Screen name="Home" component={Home0} options={{headerShown:false}} />
+        <Stack.Screen name="Statistic1" component={Statistic1} options={{headerShown:false}} />
+        <Stack.Screen name="Profile" component={Profile} options={{headerShown:false}} />
+        <Stack.Screen name="Home1" component={Home1} options={{headerShown:false}} />
+        <Stack.Screen name="Weather" component={Weather} options={{headerShown:false}} />
+        <Stack.Screen name="Home2" component={Home2} options={{headerShown:false}} />
+      </Stack.Navigator>
+    </NavigationContainer>
+
   );
 };
 

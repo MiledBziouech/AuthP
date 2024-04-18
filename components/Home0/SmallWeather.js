@@ -1,9 +1,10 @@
 import { View, Text,StyleSheet ,TouchableOpacity} from 'react-native'
 import React from 'react'
-
+import { useNavigation } from '@react-navigation/native'
 export default function SmallWeather() {
+      const navigation = useNavigation()
   return (
-    <TouchableOpacity style={styles.maincontainer}> 
+    <TouchableOpacity style={styles.maincontainer} onPress={()=>{navigation.navigate("Weather")}}> 
             <View>
                     <Text  style={styles.text1}>10:00 PM</Text>
                     <Text style={styles.text2}>18 MARCH</Text>

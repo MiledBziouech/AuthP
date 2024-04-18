@@ -9,6 +9,7 @@ import ButtomBar from '../components/Home1/ButtomBar'
 import TopPage from '../components/Home1/TopPage'
 
 export default function Home0() {
+ 
   return (
     <SafeAreaView style={{flex:1,width:'100%',}}> 
  

@@ -3,13 +3,20 @@ import React from 'react'
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import { useState } from 'react';
+import { useNavigation } from '@react-navigation/native';
 export default function TopPage() {
+    const navigation = useNavigation()
     const [name, setName] = useState("wheelz 07");
+    const handleOnPress = () => {   
+        if (navigation.canGoBack()) {
+            navigation.goBack();
+          } 
+    }
   return (
     <View style= {styles.mainContainer}>
 
 
-        <TouchableOpacity style= {styles.backContainer}>
+        <TouchableOpacity style= {styles.backContainer}  onPress={handleOnPress}>
             <Ionicons name="chevron-back-outline" size={15} color="hsl(222, 100%, 63%)" />
         </TouchableOpacity>
         

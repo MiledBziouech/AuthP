@@ -1,17 +1,18 @@
 import { View, Text ,ImageBackground,Image, TouchableOpacity,StyleSheet} from 'react-native'
 import React from 'react'
-
+import { useNavigation } from '@react-navigation/native'
 export default function BikeHealth() {
+  const navigation = useNavigation()
   return (
     <View  style={styles.mainContainer}>
-        <TouchableOpacity   >
+        <TouchableOpacity  onPress={()=>{navigation.navigate('Home1')}}  >
           
         <Image style={{width: 50, height: 50}} source={require('../../assets/Home0/back.png')} />
         <Text style={styles.text}>Bike</Text>
      
         </ TouchableOpacity>
 
-        <TouchableOpacity  >
+        <TouchableOpacity   onPress={()=>{navigation.navigate('Home2')}}>
 
         <Image style={{width: 50, height: 50}} source={require('../../assets/Home0/back.png')} />
         <Text style={styles.text}>Health</Text>
