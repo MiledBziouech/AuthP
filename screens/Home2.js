@@ -13,6 +13,7 @@ export default function Home2() {
 <StatusBar hidden={true}  />
 
       <TopPage/>
+      
       <Health/>
       <Text style={{color:"hsl(222, 100%, 63%)",fontSize:18,fontWeight:"400", fontFamily: 'Montserrat',}}>Health</Text>
       <View style={{width:"100%" ,marginBottom:20,alignItems:"center",justifyContent:"space-between",gap:10}}>

@@ -1,19 +1,20 @@
 import { View, Text,StyleSheet ,TouchableOpacity,} from 'react-native'
 import React from 'react'
-
+import { useNavigation } from '@react-navigation/native'
 export default function SwitchStatusHealth() {
+    const navigation = useNavigation();
   return (
     <View style={styles.mainContainer}>
         
         
-        <TouchableOpacity>
+        <TouchableOpacity onPress={()=>{navigation.navigate('Home1')}}>
         <View style={{alignItems:"center"}}>
             <Text style={styles.text1}>Bike Status</Text>
             <View style={styles.line}></View>
         </View>
         </TouchableOpacity>
         
-        <TouchableOpacity>
+        <TouchableOpacity onPress={()=>{navigation.navigate('Home2')}}>
         <Text style={styles.text2}>Health</Text>
         </TouchableOpacity>
 
