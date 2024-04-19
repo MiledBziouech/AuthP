@@ -7,9 +7,17 @@ import SmallWeather from '../components/Home0/SmallWeather'
 import SmallMap from '../components/Home0/SmallMap'
 import ButtomBar from '../components/Home1/ButtomBar'
 import TopPage from '../components/Home1/TopPage'
-
+import { useIsFocused } from '@react-navigation/native'
+import { useEffect,useState } from 'react'
 export default function Home0() {
- 
+  const isScreenFocused = useIsFocused();
+  const [isFocused, setIsFocused] = useState(isScreenFocused);
+
+  useEffect(() => {
+      setIsFocused(isScreenFocused);
+  }, [isScreenFocused]);
+
+  let color = "white"
   return (
     <SafeAreaView style={{flex:1,width:'100%',}}> 
  
@@ -18,7 +26,7 @@ export default function Home0() {
     <ImageBackground style={{justifyContent:"space-between",backgroundColor :"black",flex:1,width:'100%',alignItems:'center'}} source={require('../assets/backGround.png')} >
       
     <StatusBar hidden={true}  />
-    <TopPage/>
+    <TopPage  color={color} homeFocused={isFocused} />
     <SpeedMoter/>
     <Battery/>
     <View style={{width:"90%",flexDirection:'row',justifyContent:"center"}}>

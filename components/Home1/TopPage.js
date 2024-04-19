@@ -4,7 +4,9 @@ import Ionicons from 'react-native-vector-icons/Ionicons';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import { useState } from 'react';
 import { useNavigation } from '@react-navigation/native';
-export default function TopPage() {
+import { useEffect } from 'react';
+export default function TopPage({color,homeFocused,statIsFocuced,notifIsfocused}) {
+   
     const navigation = useNavigation()
     const [name, setName] = useState("wheelz 07");
     const handleOnPress = () => {   
@@ -12,16 +14,23 @@ export default function TopPage() {
             navigation.goBack();
           } 
     }
+    
+
+    
+
+
   return (
     <View style= {styles.mainContainer}>
-
+        
+        {!homeFocused && !statIsFocuced  &&
 
         <TouchableOpacity style= {styles.backContainer}  onPress={handleOnPress}>
             <Ionicons name="chevron-back-outline" size={15} color="hsl(222, 100%, 63%)" />
         </TouchableOpacity>
-        
 
-        <TouchableOpacity style={styles.imageContainer} >
+        }
+
+        <TouchableOpacity style={styles.imageContainer}  onPress={()=>{navigation.navigate('Profile')}}>
             <Image source={require("../../assets/face.jpg")} style={styles.image} />    
         </TouchableOpacity>
 
@@ -32,25 +41,34 @@ export default function TopPage() {
             
         </View>
 
+{! notifIsfocused ?
+    <TouchableOpacity style={styles.bellContainer} onPress={()=>{navigation.navigate('Notifications1')}}>
 
-         <TouchableOpacity style={styles.bellContainer}>
+    <MaterialCommunityIcons name="bell" size={40 } color="white"  />
+    <View style={styles.text3Conatiner}>
+        <Text style={styles.text3}>
+            5
+        </Text>
+    </View>
 
-            <MaterialCommunityIcons name="bell" size={40 } color="white"  />
-            <View style={styles.text3Conatiner}>
-                <Text style={styles.text3}>
-                    5
-                </Text>
-            </View>
+</TouchableOpacity> :
+<TouchableOpacity style={styles.bellContainer} onPress={()=>{navigation.navigate('Notifications1')}}>
 
-        </TouchableOpacity> 
+<MaterialCommunityIcons name="bell" size={40 } color="hsl(222, 97%, 42%)"  />
 
+
+</TouchableOpacity> 
+
+
+}
+      
 
        
-            <TouchableOpacity>
+            <TouchableOpacity onPress={()=>(navigation.navigate("Settings"))}>
 
             <ImageBackground source={require("../../assets/parametrebackground.png")}  style={styles.settingsBackImage} >
 
-            <Ionicons name="settings" size={24}   style={styles.settingsIcon}/>
+            <Ionicons name="settings" size={24}   style={[styles.settingsIcon,{color}]}/>
 
             </ImageBackground>
 
@@ -159,9 +177,11 @@ const styles = StyleSheet.create({
         
     },
     settingsIcon:{
-        color: "white",
+       
         alignSelf: "center",
        bottom: 1,
+       color: "white",
+     
  
    
     },

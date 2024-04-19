@@ -8,7 +8,9 @@ import TotaleDistance from '../components/Home1/TotaleDistance'
 import Battery from '../components/Home1/Battery'
 import SwitchStatusHealth from '../components/Home1/SwitchStatusHealth';
 import ButtomBar from '../components/Home1/ButtomBar';
+
 export default function Home1() {
+  
   return (
 
 
@@ -19,7 +21,7 @@ export default function Home1() {
     <StatusBar hidden={true}  />
 
 
-      <TopPage />
+      <TopPage  />
 
       <Kmcercle />  
 

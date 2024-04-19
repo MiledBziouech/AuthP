@@ -36,6 +36,8 @@ const App = () => {
         <Stack.Screen name="Home1" component={Home1} options={{headerShown:false}} />
         <Stack.Screen name="Weather" component={Weather} options={{headerShown:false}} />
         <Stack.Screen name="Home2" component={Home2} options={{headerShown:false}} />
+        <Stack.Screen name="Settings" component={Settings} options={{headerShown:false}} />
+        <Stack.Screen name="Notifications1" component={Notifications1} options={{headerShown:false}} />
       </Stack.Navigator>
     </NavigationContainer>
 

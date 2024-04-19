@@ -3,19 +3,32 @@ import React from 'react'
 import UnreadNotifications from '../components/Nodtifications/UnreadNotifications'
 import ReadedNotifications from '../components/Nodtifications/ReadedNotification'
 import All from '../components/Nodtifications/All'
-import TopPage from '../components/Nodtifications/TopPage'
+import TopPage from '../components/Home1/TopPage'
 import Unread from '../components/Nodtifications/Unread'
 import ButtomBar from '../components/Home1/ButtomBar'
+import { useIsFocused } from '@react-navigation/native'
+import { useEffect,useState } from 'react'
 
 export default function Notifications1() {
+  const color='white'
+
     const data1= [{name:"Mr. Wheelz",discription:"Liked your post",time:"2 min ago",readed:true} , {name:"Mr. Wheelz",discription:"Liked your post",time:"2 min ago",readed:true} ,{name:"Mr. Wheelz",discription:"Liked your post",time:"2 min ago",readed:true} ,] 
     const data= [{name:"Mr. Wheelz",discription:"Liked your post",time:"2 min ago",readed:false},{name:"Mr. Wheelz",discription:"Liked your post",time:"2 min ago",readed:false},{name:"Mr. Wheelz",discription:"Liked your post",time:"2 min ago",readed:false},{name:"Mr. Wheelz",discription:"Liked your post",time:"2 min ago",readed:false},{name:"Mr. Wheelz",discription:"Liked your post",time:"2 min ago",readed:false},] 
     const allData=[...data,...data1]
+    const isScreenFocused = useIsFocused();
+    const [isFocused, setIsFocused] = useState(isScreenFocused);
+  
+    useEffect(() => {
+        setIsFocused(isScreenFocused);
+    }, [isScreenFocused]);
+  
+  
+
   return (
     <SafeAreaView style={{flex:1,width:'100%',justifyContent:"center",alignItems:"center" }}> 
     <ImageBackground source={require('../assets/backGround.png')} style={{backgroundColor:"hsl(220, 28%, 10%)",flex:1,width:"100%" ,alignItems:"center",justifyContent:"center"}}>
     <StatusBar hidden={true}  />
-    <TopPage />
+    <TopPage notifIsfocused={isFocused} color={color}/>
   <All />
 <FlatList   data={allData} 
 

@@ -3,18 +3,30 @@ import React from 'react'
 import TopBar from '../components/Statistic/TopBar'
 import CercleStatics from '../components/Statistic/CercleStatics'
 import CercleStatic2 from '../components/Statistic/CercleStatic2'
-import TopPage from '../components/Statistic/TopPage'
+import TopPage from '../components/Home1/TopPage'
 import Trip from '../components/Statistic/Trip'
 import ButtomBar from '../components/Home1/ButtomBar'
 import Trip2 from '../components/Statistic/Trip2'
+import { useIsFocused } from '@react-navigation/native'
+import { useEffect,useState } from 'react'
 export default function Statistic1() {
+
+  const isScreenFocused = useIsFocused();
+  const [isFocused, setIsFocused] = useState(isScreenFocused);
+
+  useEffect(() => {
+      setIsFocused(isScreenFocused);
+  }, [isScreenFocused]);
+
+
+  
   return (
     <SafeAreaView style={{flex:1,width:'100%',}}> 
  
   
     
     <ImageBackground style={{justifyContent:"space-between",backgroundColor :"black",flex:1,width:'100%',alignItems:'center'}} source={require('../assets/backGround.png')} >
-        <TopPage />
+        <TopPage  statIsFocuced={isFocused}/>
         <TopBar />
       
         <Trip2 />

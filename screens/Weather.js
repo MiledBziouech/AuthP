@@ -12,6 +12,7 @@ import TopPage from '../components/Home1/TopPage';
 
 const openWeatherKey ="2855365d668dbb5d21c1ad7d42f1afee"
 const baseUrl ="https://api.openweathermap.org/data/2.5/"
+const color='white'
 export default function Weather() {
 
 
@@ -93,7 +94,10 @@ export default function Weather() {
 
     if (!weather || !hourlyForcast) {
         return (
+          <ImageBackground style={{justifyContent:"center",backgroundColor :"black",flex:1,width:'100%',alignItems:'center'}} source={require('../assets/Wheather.png')} >
           <ActivityIndicator    size="large" color="#0000ff" /> 
+          </ImageBackground>
+
         )
     }
   return (
@@ -104,7 +108,7 @@ export default function Weather() {
     <ImageBackground style={{justifyContent:"space-between",backgroundColor :"black",flex:1,width:'100%',alignItems:'center'}} source={require('../assets/Wheather.png')} >
       
     <StatusBar hidden={true}  />
-    <TopPage 
+    <TopPage color={color}
      />
     <MainWeather data={weather} />
     <SecondWeather data={weather} />
