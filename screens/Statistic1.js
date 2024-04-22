@@ -1,42 +1,63 @@
-import { View, Text ,ImageBackground,SafeAreaView,StatusBar,StyleSheet} from 'react-native'
+import { View, Text ,ImageBackground,SafeAreaView,StatusBar,StyleSheet,} from 'react-native'
 import React from 'react'
-import TopBar from '../components/Statistic/TopBar'
-import CercleStatics from '../components/Statistic/CercleStatics'
-import CercleStatic2 from '../components/Statistic/CercleStatic2'
 import TopPage from '../components/Home1/TopPage'
-import Trip from '../components/Statistic/Trip'
 import ButtomBar from '../components/Home1/ButtomBar'
-import Trip2 from '../components/Statistic/Trip2'
 import { useIsFocused } from '@react-navigation/native'
 import { useEffect,useState } from 'react'
+import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
+import Stat1 from '../components/Statistic/Stat1'
+import TopBarV2 from '../components/Statistic/TopBarV2'
+import Stat2 from '../components/Statistic2/Stat2'
+import Stat3 from '../components/Statistics3/Stat3'
 export default function Statistic1() {
 
   const isScreenFocused = useIsFocused();
   const [isFocused, setIsFocused] = useState(isScreenFocused);
 
+
   useEffect(() => {
       setIsFocused(isScreenFocused);
   }, [isScreenFocused]);
+
+  const Tab = createMaterialTopTabNavigator();  
+ 
+
+
 
 
   
   return (
     <SafeAreaView style={{flex:1,width:'100%',}}> 
  
-  
+
+ 
+     
     
     <ImageBackground style={{justifyContent:"space-between",backgroundColor :"black",flex:1,width:'100%',alignItems:'center'}} source={require('../assets/backGround.png')} >
         <TopPage  statIsFocuced={isFocused}/>
-        <TopBar />
       
-        <Trip2 />
+          <Tab.Navigator  tabBar={TopBarV2}   
+              sceneContainerStyle={{backgroundColor:"rgba(19, 23, 32, 1)" ,alignItems:"center",justifyContent:"center"}}
+              style={{     
+                    backgroundColor:"black",
+                  width:"100%",
+                  height:250,
 
-        <View style={styles.cerceles}>
-        <CercleStatics />
-        <CercleStatic2 />
-        </View>
+              
+                  justifyContent:"center",
+              
+                  marginTop:10,
 
-        <Text style={{ color: 'hsl(216, 2%, 54%)', fontSize: 16, alignSelf:"flex-end",marginRight:17,fontWeight:"400"}}>*For the last month</Text>
+ 
+                 }} 
+
+
+           >
+          <Tab.Screen name="Bike" component={Stat1}  />
+          <Tab.Screen name="Health" component={Stat2} />
+          <Tab.Screen name="Reward" component={Stat3} />
+         </Tab.Navigator>
+
         <ButtomBar />
 
     <StatusBar hidden={true}  />
@@ -48,24 +69,3 @@ export default function Statistic1() {
     </SafeAreaView >
   )
 }
-const styles = StyleSheet.create({  
-
-  cerceles:{
-    flexDirection:"row",
-    justifyContent:"space-between",
-    marginBottom:20,
-    height:250,
-    backgroundColor:"rgba(28, 33, 45, 1)",
-    width:"95%",
-    borderRadius:20,
-    shadowColor: '#000',
-    shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.3,
-    shadowRadius: 4,
-    elevation: 7, // For Android
-    
-  },
-
-
-
- })

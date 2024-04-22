@@ -30,13 +30,13 @@
           flexDirection:'row',
           justifyContent:"center",
           alignItems:"center",
-          height:260 ,
+          height:230 ,
           width:390,
           backgroundColor:"transparent"
        
 
         },
         separator: {
-          height: 20,
+          height: 8,
         },
       });

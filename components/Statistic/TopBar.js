@@ -1,5 +1,6 @@
 import { View, Text, StyleSheet } from 'react-native'
 import React from 'react'
+
 export default function TopBar() {
   return (
     <View style={styles.mainContainer}>

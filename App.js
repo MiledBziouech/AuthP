@@ -3,8 +3,7 @@ import { View, Text, StyleSheet,SafeAreaView } from 'react-native';
 import Home1 from './screens/Home1';
 import Home2 from './screens/Home2';
 import Statistic1 from './screens/Statistic1';
-import Statics2 from './screens/Statics2';
-import Statistics3 from './screens/Statistics3';
+
 import Profile from './screens/Profile';
 import Notifications1 from './screens/Notifications1';
 import Settings from './screens/Settings';
@@ -28,17 +27,16 @@ const Stack = createNativeStackNavigator();
 
 const App = () => {
   return (
-        <NavigationContainer>
-      <Stack.Navigator screenOptions={{ animation: 'none' }}>
-        <Stack.Screen name="Home" component={Home0} options={{headerShown:false}} />
+    <NavigationContainer> 
+      <Stack.Navigator >
         <Stack.Screen name="Statistic1" component={Statistic1} options={{headerShown:false}} />
+        <Stack.Screen name="Home" component={Home0} options={{headerShown:false}} />
         <Stack.Screen name="Profile" component={Profile} options={{headerShown:false}} />
         <Stack.Screen name="Home1" component={Home1} options={{headerShown:false}} />
         <Stack.Screen name="Weather" component={Weather} options={{headerShown:false}} />
         <Stack.Screen name="Home2" component={Home2} options={{headerShown:false}} />
         <Stack.Screen name="Settings" component={Settings} options={{headerShown:false}} />
         <Stack.Screen name="Notifications1" component={Notifications1} options={{headerShown:false}} />
-        
       </Stack.Navigator>
     </NavigationContainer>
 

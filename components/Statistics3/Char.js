@@ -33,12 +33,12 @@ export default function Char({Data}) {
       
       
   return (
-    <View style={{justifyContent:"center",alignItems:'center',flex:1,width:"100%"}}>
+    <View style={{justifyContent:"center",alignItems:'center',flex:1,width:"100%",marginTop:22}}>
 
       <LineChart
     data={data}
-    width={390}
-    height={271}
+    width={370}
+    height={221}
     chartConfig={chartConfig}
     bezier
     withDots={false}
