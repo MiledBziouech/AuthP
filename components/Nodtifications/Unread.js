@@ -1,64 +1,33 @@
-import { View, Text,StyleSheet ,TouchableOpacity,} from 'react-native'
+import { View, Text,StyleSheet ,TouchableOpacity,FlatList} from 'react-native'
 import React from 'react'
-
+import { useNavigation } from '@react-navigation/native'
+import UnreadNotifications from './UnreadNotifications'
 export default function All() {
-  return (
-    <View style={styles.mainContainer}>
-        
-        <TouchableOpacity>
-        <Text style={styles.text2}>All</Text>
-        </TouchableOpacity>
-
-        <TouchableOpacity>
-        <View style={{alignItems:"center"}}>
-            <Text style={styles.text1}>Unread only</Text>
-            <View style={styles.line}></View>
-        </View>
-        </TouchableOpacity>
-        
+    const navigation = useNavigation()
+    const data= [{name:"Mr. Wheelz",discription:"Liked your post",time:"2 min ago",readed:false},{name:"Mr. Wheelz",discription:"Liked your post",time:"2 min ago",readed:false},{name:"Mr. Wheelz",discription:"Liked your post",time:"2 min ago",readed:false},{name:"Mr. Wheelz",discription:"Liked your post",time:"2 min ago",readed:false},{name:"Mr. Wheelz",discription:"Liked your post",time:"2 min ago",readed:false},] 
    
+  return (
+    <View style={styles.mainContainer} >
+        
+        <FlatList   data={data} 
 
+renderItem={({item})=>  <UnreadNotifications name={item.name} discription={item.discription} time={item.time} /> }
+keyExtractor={(item,index)=>index.toString()} 
+ItemSeparatorComponent={() => <View style={styles.separator}/>}  
+showsHorizontalScrollIndicator={false} contentContainerStyle={{alignItems:"center",marginTop:12}} 
+showsVerticalScrollIndicator={false}  />
     </View>
   )
 }
 const styles = StyleSheet.create({   
     mainContainer: {
-     flexDirection: 'row',
-     justifyContent: 'flex-start',
-     width: "100%",
-     alignItems:"center", 
-     marginVertical : 20,
-     gap: 40,
-     width:"80%"
-
+        
+        
+  marginTop:5,
        
     },
 
-    text1: {
-        color: 'white',
-       
-     
-        marginTop: 3,
-        fontFamily  :"Poppins-Medium",
-        fontSize: 15,
-  
-    },
-    text2: {
-        color: 'white',
-     
-        fontFamily  :"Poppins-Medium",
-        fontSize: 15,
-    
-    },
-line: {
-backgroundColor: 'hsl(222, 100%, 44%)',
-width:120,
-height: 3,
-borderRadius: 5,
-marginTop: 1
-
-
- },
+ 
 
 
 })

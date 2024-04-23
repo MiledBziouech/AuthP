@@ -3,13 +3,12 @@ import { View, Text, StyleSheet,SafeAreaView } from 'react-native';
 import Home1 from './screens/Home1';
 import Home2 from './screens/Home2';
 import Statistic1 from './screens/Statistic1';
-
 import Profile from './screens/Profile';
 import Notifications1 from './screens/Notifications1';
 import Settings from './screens/Settings';
 import Weather from './screens/Weather';
 import Home0 from './screens/Home0';
-import Notifications2 from './screens/Notifications2';
+
 import StopScreen from './screens/PauseStopSuccess/StopScreen';
 import HourGlass from './screens/marketplace/HourGlass';
 import CommnBox from './screens/marketplace/CommonBox';
@@ -37,6 +36,7 @@ const App = () => {
         <Stack.Screen name="Home2" component={Home2} options={{headerShown:false}} />
         <Stack.Screen name="Settings" component={Settings} options={{headerShown:false}} />
         <Stack.Screen name="Notifications1" component={Notifications1} options={{headerShown:false}} />
+        
       </Stack.Navigator>
     </NavigationContainer>
 

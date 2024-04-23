@@ -2,19 +2,21 @@ import { View, Text,SafeAreaView,ImageBackground,StatusBar, FlatList,StyleSheet}
 import React from 'react'
 import UnreadNotifications from '../components/Nodtifications/UnreadNotifications'
 import ReadedNotifications from '../components/Nodtifications/ReadedNotification'
-import All from '../components/Nodtifications/All'
+
 import TopPage from '../components/Home1/TopPage'
-import Unread from '../components/Nodtifications/Unread'
+
 import ButtomBar from '../components/Home1/ButtomBar'
 import { useIsFocused } from '@react-navigation/native'
 import { useEffect,useState } from 'react'
-
+import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
+import Unread from '../components/Nodtifications/Unread'
+import All from '../components/Nodtifications/All'
 export default function Notifications1() {
+  
+  const Tab = createMaterialTopTabNavigator();  
   const color='white'
 
-    const data1= [{name:"Mr. Wheelz",discription:"Liked your post",time:"2 min ago",readed:true} , {name:"Mr. Wheelz",discription:"Liked your post",time:"2 min ago",readed:true} ,{name:"Mr. Wheelz",discription:"Liked your post",time:"2 min ago",readed:true} ,] 
-    const data= [{name:"Mr. Wheelz",discription:"Liked your post",time:"2 min ago",readed:false},{name:"Mr. Wheelz",discription:"Liked your post",time:"2 min ago",readed:false},{name:"Mr. Wheelz",discription:"Liked your post",time:"2 min ago",readed:false},{name:"Mr. Wheelz",discription:"Liked your post",time:"2 min ago",readed:false},{name:"Mr. Wheelz",discription:"Liked your post",time:"2 min ago",readed:false},] 
-    const allData=[...data,...data1]
+   
     const isScreenFocused = useIsFocused();
     const [isFocused, setIsFocused] = useState(isScreenFocused);
   
@@ -25,18 +27,119 @@ export default function Notifications1() {
   
 
   return (
+
     <SafeAreaView style={{flex:1,width:'100%',justifyContent:"center",alignItems:"center" }}> 
+    
     <ImageBackground source={require('../assets/backGround.png')} style={{backgroundColor:"hsl(220, 28%, 10%)",flex:1,width:"100%" ,alignItems:"center",justifyContent:"center"}}>
     <StatusBar hidden={true}  />
     <TopPage notifIsfocused={isFocused} color={color}/>
-  <All />
-<FlatList   data={allData} 
 
-    renderItem={({item})=> !item.readed ? <UnreadNotifications name={item.name} discription={item.discription} time={item.time} /> : <ReadedNotifications name={item.name} discription={item.discription} time={item.time} />}
-    keyExtractor={(item,index)=>index.toString()} 
-   ItemSeparatorComponent={() => <View style={styles.separator}/>}  
-   showsHorizontalScrollIndicator={false} contentContainerStyle={{alignItems:"center",marginTop:12}} 
-   showsVerticalScrollIndicator={false}  />
+
+    <Tab.Navigator  
+              sceneContainerStyle={{backgroundColor:"transparent" ,alignItems:"center",justifyContent:"center"}}
+              style={{     
+                    backgroundColor:"transparent",
+                         width:"100%",
+                        height:250,
+
+              
+                  justifyContent:"center",
+              
+                 
+                 }} 
+
+
+                 screenOptions={{
+                    
+                    tabBarStyle: { backgroundColor: 'transparent)',width:'70%',marginTop:10, },
+                  
+                  }}
+             
+                  
+
+
+                  tabBarOptions={{
+                   
+                    style: {
+                      backgroundColor: 'transparent',
+                    },
+                   
+                    
+                  }}
+
+
+           >
+
+
+<Tab.Screen name="Bike" component={All}
+
+
+options={{
+    tabBarLabel: ({ focused, color }) => (
+      <Text style={{
+        color: 'white',
+     
+        fontFamily  :"Poppins-Medium",
+        fontSize: 15,
+    }}>All</Text>
+
+
+    ),
+      
+
+
+
+
+
+}}
+
+    
+    />
+
+<Tab.Screen name="Bike1" component={Unread} 
+
+options={{
+    tabBarLabel: ({ focused, color }) => (
+      <Text style={{
+        color: 'white',
+        fontFamily  :"Poppins-Medium",
+        fontSize: 15,
+    }}>Unread only</Text>
+    ),
+    
+
+
+
+
+}}
+ />
+
+</Tab.Navigator>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <ButtomBar />
       
