@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { View, Text, TextInput, StyleSheet, Image, TouchableOpacity, Alert } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { useNavigation } from '@react-navigation/native';
-import { auth } from './firebase/firebaseConfig';
+import { auth } from '../../firebase/firebaseConfig';
 import { signInWithEmailAndPassword, sendPasswordResetEmail } from "firebase/auth";
 import Icon from 'react-native-vector-icons/FontAwesome'; // Import the desired icon
 

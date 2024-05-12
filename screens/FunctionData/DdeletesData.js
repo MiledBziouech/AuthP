@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { View, Text, StyleSheet, TextInput, Button, Alert } from 'react-native';
 import { doc, getDoc, deleteDoc } from 'firebase/firestore';
-import { db, auth } from './firebase/firebaseConfig';
+import { db, auth } from '../../firebase/firebaseConfig';
 
 const DdeletesData = () => {
   const [userData, setUserData] = useState(null);

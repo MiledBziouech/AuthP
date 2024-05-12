@@ -1,5 +1,5 @@
 import { doc, getDoc } from 'firebase/firestore';
-import db from './firebase/firebaseConfig';
+import db from '../../firebase/firebaseConfig';
 import React, { useState } from 'react';
 import { View, Text, StyleSheet, TextInput, Button } from 'react-native';
 import { initializeAuth, getReactNativePersistence } from 'firebase/auth';

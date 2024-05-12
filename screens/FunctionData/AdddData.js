@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { View, Text, TextInput, Button, StyleSheet } from 'react-native';
 import { doc, getDoc, setDoc } from 'firebase/firestore';
-import db from './firebase/firebaseConfig';
+import db from '../../firebase/firebaseConfig';
 
 const AdddData = () => {
     const [userData, setUserData] = useState(null);

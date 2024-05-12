@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { View, Button, TextInput, Alert } from 'react-native';
 import { getAuth, signInWithEmailAndPassword, sendPasswordResetEmail } from "firebase/auth";
-import { auth } from './firebase/firebaseConfig';
+import { auth } from '../firebase/firebaseConfig';
 
 const ValidAuth = () => {
     const [email, setEmail] = useState('');

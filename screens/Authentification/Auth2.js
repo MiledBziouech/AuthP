@@ -3,7 +3,7 @@ import { View, Text, TextInput, StyleSheet, Image, TouchableOpacity, Alert } fro
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { useNavigation } from '@react-navigation/native';
 import { createUserWithEmailAndPassword } from "firebase/auth";
-import { auth } from './firebase/firebaseConfig';
+import { auth } from '../../firebase/firebaseConfig';
 import Icon from 'react-native-vector-icons/FontAwesome'; // Import the desired icon
 
 const Auth2 = () => {

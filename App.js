@@ -9,7 +9,7 @@ import Settings from './screens/Settings';
 import Weather from './screens/Weather';
 import Home0 from './screens/Home0';
 
-import Test from  './ValidRegister';
+import Test from  './FunctionAuth/ValidRegister';
 
 import StopScreen from './screens/PauseStopSuccess/StopScreen';
 import HourGlass from './screens/marketplace/HourGlass';
@@ -21,16 +21,16 @@ import MyItem from './screens/marketplace/MyItem';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 const Stack = createNativeStackNavigator();
-import ValidAuth from './ValidAuth';
-import FFData from './FFData';
-import FFupdateData from './FFupdateData';
-import DdeletesData from './DdeletesData';
-import AdddData from './AdddData';
-import ConnectWallet from './ConnectWallet';
-import Success from './Success';
-import Auth from './Auth';
-import Auth2 from './Auth2';
-import ValidRegister from './ValidRegister';
+import ValidAuth from './FunctionAuth/ValidAuth';
+import FFData from './screens/FunctionData/FFData';
+import FFupdateData from './screens/FunctionData/FFupdateData';
+import DdeletesData from './screens/FunctionData/DdeletesData';
+import AdddData from './screens/FunctionData/AdddData';
+import ConnectWallet from './screens/Authentification/ConnectWallet';
+import Success from './screens/Authentification/Success';
+import Auth from './screens/Authentification/Auth';
+import Auth2 from './screens/Authentification/Auth2';
+import ValidRegister from './FunctionAuth/ValidRegister';
 
 const App = () => {
   return (
@@ -45,7 +45,7 @@ const App = () => {
         <Stack.Screen name="AdddData" component={AdddData} options={{headerShown:false}} />
         <Stack.Screen name="DdeletesData" component={DdeletesData} options={{headerShown:false}} />
         <Stack.Screen name="FFupdateData" component={FFupdateData} options={{headerShown:false}} />
-        <Stack.Screen name="FFData" component={FFData} options={{headerShown:false}} />
+  <Stack.Screen name="FFData" component={FFData} options={{headerShown:false}} />
         
 
 

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { View, Button, TextInput } from 'react-native';
 import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
-import { auth } from './firebase/firebaseConfig';
+import { auth } from '../firebase/firebaseConfig';
 
 const ValidRegister = () => {
     const [email, setEmail] = useState('');
