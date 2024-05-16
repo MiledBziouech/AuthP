@@ -10,7 +10,7 @@ const ConnectWallet = () => {
     return (
         <SafeAreaView style={styles.container}>
             <StatusBar style='auto' />
-            <Image source={require('./assets/Wheelz.png')} style={styles.image1} />
+            <Image source={require('../../assets/Wheelz.png')} style={styles.image1} />
             <View style={styles.frame}>
                 <Text style={styles.input1}>Please connect your wallet to</Text>
                 <Text style={styles.input1}>have the complete experience</Text>

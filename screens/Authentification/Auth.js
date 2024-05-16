@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
-import { View, Text, TextInput, StyleSheet, Image, TouchableOpacity, Alert } from 'react-native';
+import { View, Text, TextInput, StyleSheet, Image, TouchableOpacity, Alert ,Pressable} from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { useNavigation } from '@react-navigation/native';
 import { auth } from '../../firebase/firebaseConfig';
 import { signInWithEmailAndPassword, sendPasswordResetEmail } from "firebase/auth";
 import Icon from 'react-native-vector-icons/FontAwesome'; // Import the desired icon
-
 const Auth = () => {
     const navigation = useNavigation();
     const [passwordVisible, setPasswordVisible] = useState(false);
@@ -79,7 +78,7 @@ const Auth = () => {
 
     return(
         <SafeAreaView style={styles.container}>
-            <Image source={require('./assets/Wheelz.png')} style={styles.image1}/>
+            <Image source={require('../../assets/Wheelz.png')} style={styles.image1}/>
             <Text style={styles.text1}>Hey!</Text>
             <Text style={styles.text1} >Welcome Back</Text>
             <View style={styles.frame1}>
@@ -103,22 +102,23 @@ const Auth = () => {
                         onChangeText={setEmail}
                     />
                     <Text style={styles.inputFieldText}>Password</Text>
-                    <View style={styles.passwordContainer}>
-                        <TextInput
-                            style={[styles.inputField, styles.passwordInput]}
-                            secureTextEntry={!passwordVisible}
-                            placeholder="Your Password"
-                            value={password}
-                            onChangeText={setPassword}
+                    
+                    <View style={styles.pswrd}>
+                        <TextInput style={styles.pswrdInput}
+                        secureTextEntry={!passwordVisible}
+                        placeholder="Your Password"
+                        value={password}
+                        onChangeText={setPassword}
                         />
-                        <TouchableOpacity onPress={togglePasswordVisibility}>
+                        <Pressable onPress={togglePasswordVisibility}>
                             <Icon
                                 name={passwordVisible ? 'eye' : 'eye-slash'}
                                 size={24}
                                 color="white"
                                 style={styles.eyeIcon}
                             />
-                        </TouchableOpacity>
+                        </Pressable>
+
                     </View>
                     <Text style={styles.inputForgot}>Forgot Password?</Text>
                 </View>
@@ -131,6 +131,22 @@ const Auth = () => {
 };
 
 const styles = StyleSheet.create({
+    pswrdInput:{
+        width:'70%', 
+        
+        height:50,
+        borderRadius:10,
+    },
+    pswrd:{
+        backgroundColor:'#1D222E',
+        flexDirection:'row',
+        justifyContent:'space-around',
+        alignItems:'center',
+        width:'110%',
+        borderRadius:10,
+        marginTop:10,
+        
+    },
     line:{
         height:3,
         width:40,
@@ -218,10 +234,10 @@ const styles = StyleSheet.create({
         marginTop: 7,
     },
     eyeIcon: {
-        position: 'absolute',
-        right: 10,
-        top: '50%',
-        transform: [{ translateY: -35 }], // Adjust vertically to center the icon
+        //position: 'absolute',
+        //right: 10,
+        //top: '50%',
+        //transform: [{ translateY: -35 }], // Adjust vertically to center the icon
     },
 });
 

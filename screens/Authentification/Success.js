@@ -11,9 +11,9 @@ const Success = () => {
     return(
         <SafeAreaView style={styles.container}>
             <StatusBar style='auto'/>
-            <Image source={require('./assets/Wheelz.png')} style={styles.image1}/>
+            <Image source={require('../../assets/Wheelz.png')} style={styles.image1}/>
             <View style={styles.frame}>
-                <Image source={require('./assets/checkIcon.png')} style={styles.image2}/>     
+                <Image source={require('../../assets/checkIcon.png')} style={styles.image2}/>     
                 <Text style={styles.input1}>Success</Text>
                 <Text style={styles.input1}>Congratulations</Text>
                 <Text style={styles.input2}>you have completed your registration</Text>
